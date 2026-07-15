@@ -28,7 +28,7 @@ export default function BlogPage() {
       desc: 'Manual formulas lead to wasted ingredients. We deconstruct how automated Bill of Materials (BOM) logic safeguards your operating margins.',
       date: 'July 10, 2026',
       readTime: '8 min read',
-      author: 'Sarah Rahman',
+      author: 'Chishty Engineering',
       image: 'https://picsum.photos/seed/baking/600/400'
     },
     {
@@ -38,7 +38,7 @@ export default function BlogPage() {
       desc: 'Stop wasting capital on paper rolls. Discover how dispatching PDF receipts directly on WhatsApp increases trust, repeat orders, and reviews.',
       date: 'July 05, 2026',
       readTime: '5 min read',
-      author: 'Farooq Ahmad',
+      author: 'Chishty Engineering',
       image: 'https://picsum.photos/seed/whatsapp/600/400'
     }
   ];
