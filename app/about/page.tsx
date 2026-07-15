@@ -188,7 +188,7 @@ export default function AboutPage() {
 
       {/* OUR INSPIRATION SECTION */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white border-t border-gray-100" id="inspiration-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest font-mono block">Our Tribute</span>
             <h2 className="text-3xl sm:text-5xl font-black text-gray-900 tracking-tight">Our Inspiration</h2>
@@ -197,16 +197,16 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8 lg:gap-10">
             {inspirationProfiles.map((profile, idx) => (
               <motion.div 
                 key={idx}
                 whileHover={{ y: -6 }}
-                className="group relative bg-white/70 backdrop-blur-md border border-gray-100 rounded-3xl p-6 text-center space-y-5 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all duration-300 flex flex-col justify-between"
+                className="group relative bg-white/70 backdrop-blur-md border border-gray-100 rounded-3xl p-8 text-center space-y-6 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all duration-300 flex flex-col justify-between w-full sm:max-w-md md:w-[calc(50%-16px)] lg:w-[calc(33.333%-27px)] min-h-[380px]"
               >
                 <div className="space-y-4">
                   {/* Circular portrait frame with orange accent border on hover */}
-                  <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden">
+                  <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden flex-shrink-0">
                     <Image 
                       src={profile.image} 
                       alt={profile.name} 
@@ -223,7 +223,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="relative mt-2">
+                <div className="relative mt-4 flex-grow flex flex-col justify-center">
                   <span className="absolute -top-3 -left-2 text-gray-100 group-hover:text-orange-50 transition-colors -z-10">
                     <Quote className="w-10 h-10 rotate-180 opacity-40" />
                   </span>
@@ -236,7 +236,7 @@ export default function AboutPage() {
           </div>
 
           {/* Bottom Message Banner */}
-          <div className="bg-[#0F0F0F] rounded-3xl p-8 sm:p-10 text-center text-white relative overflow-hidden max-w-4xl mx-auto shadow-2xl border border-white/5">
+          <div className="bg-[#0F0F0F] rounded-3xl p-8 sm:p-10 text-center text-white relative overflow-hidden shadow-2xl border border-white/5">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#FF6B00]/10 rounded-full blur-3xl pointer-events-none"></div>
             <p className="text-sm sm:text-base leading-relaxed text-gray-300 font-medium max-w-2xl mx-auto italic">
               &ldquo;Behind every successful vision is a foundation of trust, guidance, sacrifice and unwavering support. Chishty Smart Solutions proudly honors the family whose encouragement and values continue to inspire our journey toward innovation, integrity and excellence.&rdquo;
