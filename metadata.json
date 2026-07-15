@@ -1,0 +1,6 @@
+{
+  "name": "Chishty Smart Solutions",
+  "description": "World-class Enterprise POS, Software Development, Web & Mobile Applications, AI Solutions, and Business Automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
