@@ -66,15 +66,15 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-6" id="footer-brand-col">
-            <Link href="/" className="flex items-center space-x-2 group">
-              <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-[#FF6B00]/20">
+            <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0">
+              <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-[#FF6B00]/20">
                 C
               </span>
-              <div className="flex flex-col">
-                <span className="text-white font-bold text-lg tracking-tight leading-none group-hover:text-[#FF6B00] transition-colors">
-                  Chishty
+              <div className="flex flex-col flex-shrink-0">
+                <span className="text-white font-black text-xl tracking-tight leading-none group-hover:text-[#FF6B00] transition-colors">
+                  CHISHTY
                 </span>
-                <span className="text-gray-400 text-xs font-medium tracking-widest uppercase">
+                <span className="text-gray-400 text-[10px] font-extrabold tracking-[0.25em] uppercase mt-0.5">
                   Smart Solutions
                 </span>
               </div>
@@ -155,16 +155,16 @@ export default function Footer() {
         {/* Contact Info Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 border-b border-white/10" id="footer-contact-row">
           <div className="flex items-start space-x-4">
-            <div className="p-3 bg-white/5 rounded-xl text-[#FF6B00]">
+            <div className="p-3 bg-white/5 rounded-xl text-[#FF6B00] flex-shrink-0">
               <Phone className="w-5 h-5" />
             </div>
             <div>
               <h5 className="text-sm font-semibold text-white">Call Office</h5>
-              <p className="text-gray-400 text-sm mt-1">+92 300 6392025</p>
+              <p className="text-gray-400 text-sm mt-1 whitespace-nowrap font-medium">+92 300 6392025</p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
-            <div className="p-3 bg-white/5 rounded-xl text-[#FF6B00]">
+            <div className="p-3 bg-white/5 rounded-xl text-[#FF6B00] flex-shrink-0">
               <MessageSquare className="w-5 h-5" />
             </div>
             <div>
@@ -173,7 +173,7 @@ export default function Footer() {
                 href="https://wa.me/923006392025" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#FF6B00] text-sm mt-1 block transition-colors"
+                className="text-gray-400 hover:text-[#FF6B00] text-sm mt-1 block transition-colors whitespace-nowrap font-medium"
               >
                 +92 300 6392025 (Open Chat)
               </a>

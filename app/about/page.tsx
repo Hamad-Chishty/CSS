@@ -48,20 +48,14 @@ export default function AboutPage() {
 
   const executiveTeam = [
     {
-      name: 'Muhammad Chishty',
-      role: 'CEO & Chief Technical Architect',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80',
-      bio: 'Directs the overall technical architecture, database systems, and POS terminal orchestration workflows for our clients.'
+      name: 'Hamad Chishty',
+      role: 'Founder & CEO',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80',
+      bio: 'Directs the overall business architecture, core technology visions, and customer success strategies to scale enterprise organizations internationally.'
     }
   ];
 
   const inspirationProfiles = [
-    {
-      name: 'Hamad Chishty',
-      relationship: 'Founder & CEO',
-      message: '"Driven by innovation, continuous learning and a passion for building world-class software solutions that help businesses grow."',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80'
-    },
     {
       name: 'Abdul Waheed Chishty',
       relationship: 'Father',

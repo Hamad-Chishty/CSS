@@ -102,17 +102,17 @@ export default function Header() {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group" id="header-logo-link">
-            <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-[#FF6B00]/20 transition-transform duration-300 group-hover:scale-105">
+          <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0" id="header-logo-link">
+            <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-[#FF6B00]/20 transition-transform duration-300 group-hover:scale-105">
               C
             </span>
-            <div className="flex flex-col">
-              <span className={`font-bold text-lg tracking-tight leading-none transition-colors ${
+            <div className="flex flex-col flex-shrink-0">
+              <span className={`font-black text-xl tracking-tight leading-none transition-colors ${
                 scrolled ? 'text-[#1C1C1C] group-hover:text-[#FF6B00]' : 'text-white group-hover:text-[#FF6B00]'
               }`}>
-                Chishty
+                CHISHTY
               </span>
-              <span className={`text-xs font-medium tracking-widest uppercase transition-colors ${
+              <span className={`text-[10px] font-extrabold tracking-[0.25em] uppercase transition-colors mt-0.5 ${
                 scrolled ? 'text-gray-500' : 'text-gray-400'
               }`}>
                 Smart Solutions
@@ -209,18 +209,18 @@ export default function Header() {
           </nav>
 
           {/* Action CTAs */}
-          <div className="hidden lg:flex items-center space-x-4" id="desktop-ctas">
+          <div className="hidden lg:flex items-center space-x-4 flex-shrink-0" id="desktop-ctas">
             <a 
               id="header-wa-btn"
               href="https://wa.me/923006392025" 
               target="_blank" 
               rel="noopener noreferrer"
-              className={`flex items-center space-x-1.5 text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1.5 text-sm font-semibold transition-colors whitespace-nowrap flex-shrink-0 ${
                 scrolled ? 'text-gray-700 hover:text-[#FF6B00]' : 'text-gray-300 hover:text-[#FF6B00]'
               }`}
             >
-              <MessageSquare className="w-4 h-4 text-[#FF6B00]" />
-              <span>+92 300 6392025</span>
+              <MessageSquare className="w-4 h-4 text-[#FF6B00] flex-shrink-0" />
+              <span className="whitespace-nowrap">+92 300 6392025</span>
             </a>
             <Link 
               id="header-demo-btn"
