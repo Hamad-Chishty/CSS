@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { 
   ArrowRight, BookOpen, Clock, Calendar, MessageSquare, 
@@ -74,9 +75,15 @@ export default function BlogPage() {
               <div>
                 {/* Image panel */}
                 <div className="aspect-video bg-gray-200 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-[#FF6B00]/10 to-transparent"></div>
-                  <img src={post.image} alt={post.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
-                  <span className="absolute top-4 left-4 bg-[#1C1C1C] text-[#FF6B00] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[#FF6B00]/10 to-transparent z-10"></div>
+                  <Image 
+                    src={post.image} 
+                    alt={post.title} 
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                    referrerPolicy="no-referrer" 
+                  />
+                  <span className="absolute top-4 left-4 bg-[#1C1C1C] text-[#FF6B00] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full z-10">
                     {post.category}
                   </span>
                 </div>

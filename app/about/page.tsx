@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { 
   Users, CheckCircle2, MessageSquare, Landmark, Shield, 
@@ -155,12 +156,16 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {executiveTeam.map((member, idx) => (
             <div key={idx} className="bg-gray-50 border border-gray-150 rounded-2xl p-8 text-center space-y-4 shadow-sm hover:shadow-md transition-shadow">
-              <img 
-                src={member.image} 
-                alt={member.name} 
-                className="w-28 h-28 rounded-full mx-auto bg-gray-100 border-4 border-white shadow-md object-cover" 
-                referrerPolicy="no-referrer"
-              />
+              <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white shadow-md">
+                <Image 
+                  src={member.image} 
+                  alt={member.name} 
+                  width={112}
+                  height={112}
+                  className="w-full h-full object-cover bg-gray-100" 
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
                 <p className="text-xs text-[#FF6B00] font-semibold tracking-wider uppercase mt-0.5">{member.role}</p>
@@ -208,9 +213,11 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   {/* Circular portrait frame with orange accent border on hover */}
                   <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden">
-                    <img 
+                    <Image 
                       src={profile.image} 
                       alt={profile.name} 
+                      width={96}
+                      height={96}
                       className="w-full h-full rounded-full object-cover bg-gray-50"
                       referrerPolicy="no-referrer"
                     />
