@@ -22,10 +22,54 @@ export default function BlogPostPage({ params }: PageProps) {
   const [copied, setCopied] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
+  const [blogContent, setBlogContent] = useState<{
+    introduction?: string;
+    problemStatement?: string;
+    detailedSolutionHtml?: string;
+    fullContentHtml?: string;
+  } | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [prevSlug, setPrevSlug] = useState(slug);
+
+  // Reset state when slug changes during render
+  if (slug !== prevSlug) {
+    setPrevSlug(slug);
+    setBlogContent(null);
+    setIsLoading(true);
+  }
+
   // Find current post
   const post = useMemo(() => {
     return BLOG_POSTS.find(p => p.slug === slug);
   }, [slug]);
+
+  // Fetch detailed content dynamically
+  useEffect(() => {
+    if (!post) return;
+    
+    let active = true;
+    fetch(`/api/blog/${slug}`)
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load blog content');
+        return res.json();
+      })
+      .then(data => {
+        if (active) {
+          setBlogContent(data);
+          setIsLoading(false);
+        }
+      })
+      .catch(err => {
+        console.error("Error loading blog content:", err);
+        if (active) {
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [slug, post]);
 
   // If post doesn't exist, trigger 404
   if (!post) {
@@ -80,12 +124,12 @@ export default function BlogPostPage({ params }: PageProps) {
   const tocItems = useMemo(() => {
     if (!post) return [];
     
-    if (post.fullContentHtml) {
+    if (blogContent && blogContent.fullContentHtml) {
       const h2Regex = /<h2 id="([^"]+)">([^<]+)<\/h2>/g;
       const items: { id: string; text: string }[] = [];
       let match;
       h2Regex.lastIndex = 0;
-      while ((match = h2Regex.exec(post.fullContentHtml)) !== null) {
+      while ((match = h2Regex.exec(blogContent.fullContentHtml)) !== null) {
         items.push({
           id: match[1],
           text: match[2].replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
@@ -110,7 +154,7 @@ export default function BlogPostPage({ params }: PageProps) {
       { id: "common-mistakes", text: "Mistakes to Avoid" },
       { id: "frequently-asked-questions", text: "Frequently Asked Questions" }
     ];
-  }, [post]);
+  }, [post, blogContent]);
 
   // Schema LD generation
   const faqSchema = useMemo(() => {
@@ -298,9 +342,14 @@ export default function BlogPostPage({ params }: PageProps) {
           {/* Reading Prose Body Middle Column */}
           <div className="lg:col-span-9 space-y-12" id="article-editorial-pane">
             
-            {post.fullContentHtml ? (
+            {isLoading ? (
+              <div className="flex flex-col items-center justify-center py-24 space-y-4">
+                <div className="w-12 h-12 border-4 border-[#FF6B00] border-t-transparent rounded-full animate-spin"></div>
+                <p className="text-sm font-medium text-gray-500 font-mono">Loading system blueprint...</p>
+              </div>
+            ) : blogContent?.fullContentHtml ? (
               <section id="full-article" className="markdown-body scroll-mt-28">
-                <div dangerouslySetInnerHTML={{ __html: post.fullContentHtml }} />
+                <div dangerouslySetInnerHTML={{ __html: blogContent.fullContentHtml }} />
               </section>
             ) : (
               <>
@@ -310,9 +359,13 @@ export default function BlogPostPage({ params }: PageProps) {
                     <span className="w-2.5 h-7 bg-[#FF6B00] rounded-full"></span>
                     Executive Introduction
                   </h2>
-                  <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-light">
-                    {post.introduction}
-                  </p>
+                  <div className="text-gray-700 text-base sm:text-lg leading-relaxed font-light">
+                    {blogContent?.introduction ? (
+                      <span dangerouslySetInnerHTML={{ __html: blogContent.introduction }} />
+                    ) : (
+                      post.desc
+                    )}
+                  </div>
                 </section>
 
                 {/* Dynamic Jump Anchor: Business Problem */}
@@ -321,9 +374,13 @@ export default function BlogPostPage({ params }: PageProps) {
                     <AlertCircle className="w-6 h-6 text-red-500" />
                     The Core Operational Leak
                   </h2>
-                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    {post.problemStatement}
-                  </p>
+                  <div className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                    {blogContent?.problemStatement ? (
+                      <span dangerouslySetInnerHTML={{ __html: blogContent.problemStatement }} />
+                    ) : (
+                      "SMEs in Pakistan face severe operational inefficiencies, cash pilferage, and inventory wastage due to un-digitized workflows."
+                    )}
+                  </div>
                 </section>
 
                 {/* Dynamic Jump Anchor: Technical Solution */}
@@ -334,7 +391,7 @@ export default function BlogPostPage({ params }: PageProps) {
                   </h2>
                   <div 
                     className="prose max-w-none text-gray-700 leading-relaxed space-y-6 text-sm sm:text-base"
-                    dangerouslySetInnerHTML={{ __html: post.detailedSolutionHtml }}
+                    dangerouslySetInnerHTML={{ __html: blogContent?.detailedSolutionHtml || "" }}
                   />
                 </section>
               </>

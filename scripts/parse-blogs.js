@@ -478,7 +478,34 @@ for (const file of blogFiles) {
   }
 }
 
-// Generate the TypeScript file contents
+// Generate the TypeScript file contents and separate JSON files
+const contentDir = path.join(rootDir, 'lib', 'blog-content');
+if (!fs.existsSync(contentDir)) {
+  fs.mkdirSync(contentDir, { recursive: true });
+}
+
+// Separate heavy content from metadata
+const metadataPosts = [];
+
+for (const post of parsedPosts) {
+  // 1. Save detailed HTML content to separate JSON file
+  const detailedContent = {
+    introduction: post.introduction,
+    problemStatement: post.problemStatement,
+    detailedSolutionHtml: post.detailedSolutionHtml,
+    fullContentHtml: post.fullContentHtml
+  };
+  fs.writeFileSync(
+    path.join(contentDir, `${post.slug}.json`),
+    JSON.stringify(detailedContent, null, 2),
+    'utf-8'
+  );
+
+  // 2. Create metadata-only post
+  const { introduction, problemStatement, detailedSolutionHtml, fullContentHtml, ...metadataOnly } = post;
+  metadataPosts.push(metadataOnly);
+}
+
 const tsOutput = `export interface BlogPost {
   title: string;
   slug: string;
@@ -503,9 +530,9 @@ const tsOutput = `export interface BlogPost {
   };
   tags: string[];
   faqs: { question: string; answer: string }[];
-  introduction: string;
-  problemStatement: string;
-  detailedSolutionHtml: string;
+  introduction?: string;
+  problemStatement?: string;
+  detailedSolutionHtml?: string;
   benefits: string[];
   bestPractices: string[];
   commonMistakes: string[];
@@ -515,8 +542,10 @@ const tsOutput = `export interface BlogPost {
   fullContentHtml?: string;
 }
 
-export const BLOG_POSTS: BlogPost[] = ${JSON.stringify(parsedPosts, null, 2)};
+export const BLOG_POSTS: BlogPost[] = ${JSON.stringify(metadataPosts, null, 2)};
 `;
 
 fs.writeFileSync(path.join(rootDir, 'lib', 'blog-data.ts'), tsOutput, 'utf-8');
 console.log('Successfully wrote parsed blog posts to /lib/blog-data.ts');
+console.log(`Successfully wrote ${metadataPosts.length} individual blog content JSON files to /lib/blog-content/`);
+
