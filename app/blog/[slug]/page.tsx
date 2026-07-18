@@ -53,6 +53,20 @@ export default function BlogPostPage({ params }: PageProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Set document title and meta description dynamically for robust SEO
+  useEffect(() => {
+    if (post) {
+      document.title = post.seo.title;
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.setAttribute('name', 'description');
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.setAttribute('content', post.seo.description);
+    }
+  }, [post]);
+
   // Copy link handler
   const handleCopyLink = () => {
     if (typeof window !== 'undefined') {
@@ -64,6 +78,29 @@ export default function BlogPostPage({ params }: PageProps) {
 
   // Generate Table of Contents dynamically based on detailed content headings
   const tocItems = useMemo(() => {
+    if (!post) return [];
+    
+    if (post.fullContentHtml) {
+      const h2Regex = /<h2 id="([^"]+)">([^<]+)<\/h2>/g;
+      const items: { id: string; text: string }[] = [];
+      let match;
+      h2Regex.lastIndex = 0;
+      while ((match = h2Regex.exec(post.fullContentHtml)) !== null) {
+        items.push({
+          id: match[1],
+          text: match[2].replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+        });
+      }
+      
+      // Add standard bottom bento blocks to Table of Contents
+      items.push({ id: "operational-benefits", text: "Enterprise Yields" });
+      items.push({ id: "best-practices", text: "Best Practices" });
+      items.push({ id: "common-mistakes", text: "Mistakes to Avoid" });
+      items.push({ id: "frequently-asked-questions", text: "Frequently Asked Questions" });
+      
+      return items;
+    }
+
     return [
       { id: "introduction", text: "Introduction" },
       { id: "business-problem", text: "The Core Business Problem" },
@@ -73,7 +110,7 @@ export default function BlogPostPage({ params }: PageProps) {
       { id: "common-mistakes", text: "Mistakes to Avoid" },
       { id: "frequently-asked-questions", text: "Frequently Asked Questions" }
     ];
-  }, []);
+  }, [post]);
 
   // Schema LD generation
   const faqSchema = useMemo(() => {
@@ -261,39 +298,47 @@ export default function BlogPostPage({ params }: PageProps) {
           {/* Reading Prose Body Middle Column */}
           <div className="lg:col-span-9 space-y-12" id="article-editorial-pane">
             
-            {/* Dynamic Jump Anchor: Introduction */}
-            <section id="introduction" className="scroll-mt-28 space-y-6">
-              <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight flex items-center gap-3">
-                <span className="w-2.5 h-7 bg-[#FF6B00] rounded-full"></span>
-                Executive Introduction
-              </h2>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-light">
-                {post.introduction}
-              </p>
-            </section>
+            {post.fullContentHtml ? (
+              <section id="full-article" className="markdown-body scroll-mt-28">
+                <div dangerouslySetInnerHTML={{ __html: post.fullContentHtml }} />
+              </section>
+            ) : (
+              <>
+                {/* Dynamic Jump Anchor: Introduction */}
+                <section id="introduction" className="scroll-mt-28 space-y-6">
+                  <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight flex items-center gap-3">
+                    <span className="w-2.5 h-7 bg-[#FF6B00] rounded-full"></span>
+                    Executive Introduction
+                  </h2>
+                  <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-light">
+                    {post.introduction}
+                  </p>
+                </section>
 
-            {/* Dynamic Jump Anchor: Business Problem */}
-            <section id="business-problem" className="scroll-mt-28 p-8 bg-red-50/50 border border-red-100 rounded-3xl space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2">
-                <AlertCircle className="w-6 h-6 text-red-500" />
-                The Core Operational Leak
-              </h2>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                {post.problemStatement}
-              </p>
-            </section>
+                {/* Dynamic Jump Anchor: Business Problem */}
+                <section id="business-problem" className="scroll-mt-28 p-8 bg-red-50/50 border border-red-100 rounded-3xl space-y-4">
+                  <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2">
+                    <AlertCircle className="w-6 h-6 text-red-500" />
+                    The Core Operational Leak
+                  </h2>
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                    {post.problemStatement}
+                  </p>
+                </section>
 
-            {/* Dynamic Jump Anchor: Technical Solution */}
-            <section id="technical-solution" className="scroll-mt-28 space-y-6">
-              <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight flex items-center gap-3">
-                <span className="w-2.5 h-7 bg-[#FF6B00] rounded-full"></span>
-                The Solution Blueprint
-              </h2>
-              <div 
-                className="prose max-w-none text-gray-700 leading-relaxed space-y-6 text-sm sm:text-base"
-                dangerouslySetInnerHTML={{ __html: post.detailedSolutionHtml }}
-              />
-            </section>
+                {/* Dynamic Jump Anchor: Technical Solution */}
+                <section id="technical-solution" className="scroll-mt-28 space-y-6">
+                  <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight flex items-center gap-3">
+                    <span className="w-2.5 h-7 bg-[#FF6B00] rounded-full"></span>
+                    The Solution Blueprint
+                  </h2>
+                  <div 
+                    className="prose max-w-none text-gray-700 leading-relaxed space-y-6 text-sm sm:text-base"
+                    dangerouslySetInnerHTML={{ __html: post.detailedSolutionHtml }}
+                  />
+                </section>
+              </>
+            )}
 
             {/* Dynamic Jump Anchor: Operational Benefits */}
             <section id="operational-benefits" className="scroll-mt-28 space-y-6">
