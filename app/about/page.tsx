@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'motion/react';
+import hamadImage from '@/src/assets/images/hamad_chishty_1784400179756.jpg';
 import { 
   Users, CheckCircle2, MessageSquare, Landmark, Shield, 
   Cpu, Sparkles, Star, Award, Heart, ShieldAlert,
@@ -48,31 +49,28 @@ export default function AboutPage() {
 
   const executiveTeam = [
     {
-      name: 'Hamad Chishty',
+      name: 'Hamad Waheed Chishty',
       role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80',
+      image: hamadImage,
       bio: 'Directs the overall business architecture, core technology visions, and customer success strategies to scale enterprise organizations internationally.'
     }
   ];
 
-  const inspirationProfiles = [
+  const inspirationProfiles: { name: string; relationship: string; message: string; image?: any }[] = [
     {
       name: 'Abdul Waheed Chishty',
       relationship: 'Father',
-      message: '"His guidance, wisdom and unwavering support laid the foundation of the values that continue to shape our journey."',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&h=300&q=80'
+      message: '"His guidance, wisdom and unwavering support laid the foundation of the values that continue to shape our journey."'
     },
     {
       name: 'Muhammad Idrees',
       relationship: 'Uncle',
-      message: '"An enduring source of encouragement whose trust and support have inspired us to pursue excellence with confidence."',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80'
+      message: '"An enduring source of encouragement whose trust and support have inspired us to pursue excellence with confidence."'
     },
     {
-      name: 'Waqad Waheed',
+      name: 'Waqas Waheed',
       relationship: 'Brother',
-      message: '"A constant source of motivation whose encouragement and belief continue to strengthen our vision for the future."',
-      image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&h=300&q=80'
+      message: '"A constant source of motivation whose encouragement and belief continue to strengthen our vision for the future."'
     }
   ];
 
@@ -205,17 +203,25 @@ export default function AboutPage() {
                 className="group relative bg-white/70 backdrop-blur-md border border-gray-100 rounded-3xl p-8 text-center space-y-6 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all duration-300 flex flex-col justify-between w-full sm:max-w-md md:w-[calc(50%-16px)] lg:w-[calc(33.333%-27px)] min-h-[380px]"
               >
                 <div className="space-y-4">
-                  {/* Circular portrait frame with orange accent border on hover */}
-                  <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden flex-shrink-0">
-                    <Image 
-                      src={profile.image} 
-                      alt={profile.name} 
-                      width={96}
-                      height={96}
-                      className="w-full h-full rounded-full object-cover bg-gray-50"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
+                  {/* Circular portrait frame with orange accent border on hover or initials avatar */}
+                  {profile.image ? (
+                    <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden flex-shrink-0">
+                      <Image 
+                        src={profile.image} 
+                        alt={profile.name} 
+                        width={96}
+                        height={96}
+                        className="w-full h-full rounded-full object-cover bg-gray-50"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  ) : (
+                    <div className="relative w-24 h-24 mx-auto rounded-full border-2 border-dashed border-gray-250 group-hover:border-[#FF6B00]/40 group-hover:bg-orange-50/30 transition-all duration-300 flex items-center justify-center flex-shrink-0 bg-gray-50/50">
+                      <span className="text-xl font-black text-gray-400 group-hover:text-[#FF6B00] transition-colors font-mono">
+                        {profile.name.split(' ').map((n) => n[0]).join('').substring(0, 2)}
+                      </span>
+                    </div>
+                  )}
                   
                   <div>
                     <h3 className="text-base sm:text-lg font-extrabold text-gray-900 group-hover:text-[#FF6B00] transition-colors">{profile.name}</h3>
