@@ -108,7 +108,17 @@ const unsplashImages = {
   "067": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&h=630&q=80",
   "068": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1200&h=630&q=80",
   "069": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=630&q=80",
-  "070": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80"
+  "070": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80",
+  "071": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80",
+  "072": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&h=630&q=80",
+  "073": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=630&q=80",
+  "074": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=630&q=80",
+  "075": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&h=630&q=80",
+  "076": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&h=630&q=80",
+  "077": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1200&h=630&q=80",
+  "078": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=630&q=80",
+  "079": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
+  "080": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80"
 };
 
 // Dates spaced out nicely
@@ -182,7 +192,17 @@ const dates = {
   "067": "May 11, 2026",
   "068": "May 10, 2026",
   "069": "May 09, 2026",
-  "070": "May 08, 2026"
+  "070": "May 08, 2026",
+  "071": "May 07, 2026",
+  "072": "May 06, 2026",
+  "073": "May 05, 2026",
+  "074": "May 04, 2026",
+  "075": "May 03, 2026",
+  "076": "May 02, 2026",
+  "077": "May 01, 2026",
+  "078": "April 30, 2026",
+  "079": "April 29, 2026",
+  "080": "April 28, 2026"
 };
 
 function getBulletPointsFromSection(text, sectionHeaderKeywords) {
