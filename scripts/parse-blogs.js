@@ -118,7 +118,27 @@ const unsplashImages = {
   "077": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1200&h=630&q=80",
   "078": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=630&q=80",
   "079": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
-  "080": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80"
+  "080": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80",
+  "081": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&h=630&q=80",
+  "082": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=630&q=80",
+  "083": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
+  "084": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=630&q=80",
+  "085": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&h=630&q=80",
+  "086": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&h=630&q=80",
+  "087": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=630&q=80",
+  "088": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80",
+  "089": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=630&q=80",
+  "090": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&h=630&q=80",
+  "091": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&h=630&q=80",
+  "092": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&h=630&q=80",
+  "093": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&h=630&q=80",
+  "094": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&h=630&q=80",
+  "095": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=630&q=80",
+  "096": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=630&q=80",
+  "097": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=630&q=80",
+  "098": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&h=630&q=80",
+  "099": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=630&q=80",
+  "100": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80"
 };
 
 // Dates spaced out nicely
@@ -202,7 +222,27 @@ const dates = {
   "077": "May 01, 2026",
   "078": "April 30, 2026",
   "079": "April 29, 2026",
-  "080": "April 28, 2026"
+  "080": "April 28, 2026",
+  "081": "July 17, 2026",
+  "082": "July 18, 2026",
+  "083": "July 19, 2026",
+  "084": "July 20, 2026",
+  "085": "July 21, 2026",
+  "086": "July 22, 2026",
+  "087": "July 23, 2026",
+  "088": "July 24, 2026",
+  "089": "July 25, 2026",
+  "090": "July 26, 2026",
+  "091": "July 27, 2026",
+  "092": "July 28, 2026",
+  "093": "July 29, 2026",
+  "094": "July 30, 2026",
+  "095": "July 31, 2026",
+  "096": "August 01, 2026",
+  "097": "August 02, 2026",
+  "098": "August 03, 2026",
+  "099": "August 04, 2026",
+  "100": "August 05, 2026"
 };
 
 function getBulletPointsFromSection(text, sectionHeaderKeywords) {
