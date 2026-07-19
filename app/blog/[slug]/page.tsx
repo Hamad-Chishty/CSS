@@ -9,7 +9,7 @@ import {
   ChevronRight, ArrowRight, Quote, CheckCircle2, AlertCircle, Sparkles, HelpCircle, ChevronDown
 } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
-import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
+import hamadImage from '@/src/assets/images/hamad-chishty.png';
 
 const PILLARS = [
   {

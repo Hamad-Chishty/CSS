@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'motion/react';
-import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
+import hamadImage from '@/src/assets/images/hamad-chishty.png';
 import { 
   Users, CheckCircle2, MessageSquare, Landmark, Shield, 
   Cpu, Sparkles, Star, Award, Heart, ShieldAlert,

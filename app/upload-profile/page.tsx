@@ -132,7 +132,7 @@ export default function UploadProfilePage() {
               Founder Profile Image Uploader
             </h1>
             <p className="text-sm text-gray-500 max-w-xl">
-              Since you don&apos;t have access to the file manager, this form allows you to upload and immediately replace the founder profile image (<code className="bg-gray-100 text-red-600 px-1 py-0.5 rounded text-xs">hamad-chishty.jpg</code>) across the entire website.
+              Since you don&apos;t have access to the file manager, this form allows you to upload and immediately replace the founder profile image (<code className="bg-gray-100 text-red-600 px-1 py-0.5 rounded text-xs">hamad-chishty.png</code>) across the entire website.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ export default function UploadProfilePage() {
             </h4>
             <ol className="list-decimal pl-4 space-y-1 text-amber-900/80">
               <li>Upload your real image on this page.</li>
-              <li>The server will write it directly to the source directory <code className="bg-amber-100 px-1 py-0.5 rounded">src/assets/images/hamad-chishty.jpg</code>.</li>
+              <li>The server will write it directly to the source directory <code className="bg-amber-100 px-1 py-0.5 rounded">src/assets/images/hamad-chishty.png</code>.</li>
               <li>This instantly replaces the old avatar for the <strong>CEO Portrait</strong>, <strong>About Page</strong>, <strong>Blog Author</strong>, and <strong>Author Bio Cards</strong> across all pages of your website.</li>
               <li>After uploading, refresh your browser. The updated photo will show up immediately.</li>
             </ol>

@@ -9,7 +9,7 @@ import {
   ChevronRight, Sparkles, User, Share2, Search, Tag, Mail, HelpCircle, Check
 } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
-import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
+import hamadImage from '@/src/assets/images/hamad-chishty.png';
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState('');
