@@ -359,6 +359,22 @@ export default function BlogPostPage({ params }: PageProps) {
   return (
     <div id={`blog-post-${post.slug}`} className="bg-white min-h-screen relative pt-6">
       
+      {/* 0. SEO Meta Tags (Hoisted automatically by React/Next.js) */}
+      <title>{post.seo?.title || `${post.title} | Chishty Smart Solutions`}</title>
+      <meta name="description" content={post.seo?.description || post.desc} />
+      <link rel="canonical" href={`https://chishtysmartsolutions.com/blog/${post.slug}`} />
+      
+      <meta property="og:title" content={post.seo?.title || post.title} />
+      <meta property="og:description" content={post.seo?.description || post.desc} />
+      <meta property="og:url" content={`https://chishtysmartsolutions.com/blog/${post.slug}`} />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content={post.image} />
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.seo?.title || post.title} />
+      <meta name="twitter:description" content={post.seo?.description || post.desc} />
+      <meta name="twitter:image" content={post.image} />
+      
       {/* 1. Sticky Reading Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-100 z-50">
         <div 

@@ -51,6 +51,22 @@ export default function BlogPage() {
   return (
     <div id="blog-page-root" className="bg-white min-h-screen">
       
+      {/* SEO Meta Tags (Hoisted automatically by React/Next.js) */}
+      <title>Expert Business Technology Blog | Chishty Smart Solutions</title>
+      <meta name="description" content="Read actionable technical blueprints, operational strategies, and data-driven insights engineered to safeguard profit margins and accelerate your retail or hospitality enterprise." />
+      <link rel="canonical" href="https://chishtysmartsolutions.com/blog" />
+      
+      <meta property="og:title" content="Expert Business Technology Blog | Chishty Smart Solutions" />
+      <meta property="og:description" content="Read actionable technical blueprints, operational strategies, and data-driven insights engineered to safeguard profit margins and accelerate your retail or hospitality enterprise." />
+      <meta property="og:url" content="https://chishtysmartsolutions.com/blog" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://chishtysmartsolutions.com/assets/images/logo.png" />
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Expert Business Technology Blog | Chishty Smart Solutions" />
+      <meta name="twitter:description" content="Read actionable technical blueprints, operational strategies, and data-driven insights engineered to safeguard profit margins and accelerate your retail or hospitality enterprise." />
+      <meta name="twitter:image" content="https://chishtysmartsolutions.com/assets/images/logo.png" />
+      
       {/* Editorial Page Header */}
       <section className="bg-gradient-to-b from-[#1C1C1C] to-[#121212] text-white py-20 lg:py-28 relative overflow-hidden">
         {/* Ambient lighting effects */}
