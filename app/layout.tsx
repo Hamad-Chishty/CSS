@@ -87,7 +87,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}>
-      <head>
+      <body suppressHydrationWarning className="bg-white font-sans text-gray-900 antialiased min-h-screen flex flex-col justify-between">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -96,8 +96,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-      </head>
-      <body suppressHydrationWarning className="bg-white font-sans text-gray-900 antialiased min-h-screen flex flex-col justify-between">
         {/* Global Navigation */}
         <Header />
 
