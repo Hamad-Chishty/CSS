@@ -18,13 +18,13 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Save the file to the target location: src/assets/images/hamad-chishty.png
+    // Save the file to the target location: src/assets/images/hamad-chishty.jpg
     const targetDir = path.join(process.cwd(), "src", "assets", "images");
     
     // Ensure directory exists
     await fs.mkdir(targetDir, { recursive: true });
 
-    const targetPath = path.join(targetDir, "hamad-chishty.png");
+    const targetPath = path.join(targetDir, "hamad-chishty.jpg");
 
     // Write the new image
     await fs.writeFile(targetPath, buffer);
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       message: "Image successfully uploaded and replaced!",
-      filePath: "/src/assets/images/hamad-chishty.png"
+      filePath: "/src/assets/images/hamad-chishty.jpg"
     });
   } catch (error: any) {
     console.error("Error saving uploaded image:", error);
