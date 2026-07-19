@@ -11,6 +11,130 @@ import {
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
 import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
 
+const PILLARS = [
+  {
+    id: 'restaurant-pos',
+    title: 'Restaurant POS Systems',
+    slug: 'complete-restaurant-pos-guide',
+    keywords: ['restaurant', 'kitchen', 'foh', 'menu', 'qr', 'dining', 'table', 'fbr-pos'],
+    products: [{ id: 'pos-restaurant', title: 'Restaurant & Cafe POS Suite' }],
+    services: [{ id: 'custom-dev', title: 'Custom Software & Desktop Systems' }],
+    categories: ['Restaurant Technology', 'Restaurant Management', 'Restaurant Operations', 'Restaurant Innovation', 'Kitchen Technology', 'Front-of-House Operations', 'Menu Strategy', 'Restaurant Marketing', 'Tax Compliance', 'Restaurant Accounting']
+  },
+  {
+    id: 'retail-pos',
+    title: 'Retail POS Systems',
+    slug: 'ultimate-guide-retail-pos-small-businesses',
+    keywords: ['retail', 'grocery', 'barcode', 'store', 'shop', 'checkout'],
+    products: [{ id: 'pos-retail', title: 'Retail & Grocery POS System' }],
+    services: [{ id: 'custom-dev', title: 'Custom Software & Desktop Systems' }],
+    categories: ['Retail Technology', 'Retail Automation', 'Retail Management', 'Retail Marketing']
+  },
+  {
+    id: 'erp-accounting',
+    title: 'Enterprise ERP & Accounting',
+    slug: 'ultimate-guide-erp-growing-businesses',
+    keywords: ['erp', 'accounting', 'financial', 'ledger', 'hr', 'payroll', 'manufacturing', 'human'],
+    products: [{ id: 'erp-accounting', title: 'Enterprise ERP & Financial Ledger' }, { id: 'hr-payroll', title: 'HR & Automated Payroll Suite' }],
+    services: [{ id: 'custom-dev', title: 'Custom Software & Desktop Systems' }],
+    categories: ['Enterprise Resource Planning', 'Business Process Automation', 'Supply Chain Management', 'Enterprise Accounting', 'Human Resource Management', 'Manufacturing Automation', 'ERP Consulting', 'Enterprise Tech Trends']
+  },
+  {
+    id: 'inventory-warehouse',
+    title: 'Inventory & Warehouse Management',
+    slug: 'ultimate-guide-inventory-management-software',
+    keywords: ['inventory', 'warehouse', 'stock', 'replenishment', 'forecasting'],
+    products: [{ id: 'pos-retail', title: 'Retail & Grocery POS System' }],
+    services: [{ id: 'custom-dev', title: 'Custom Software & Desktop Systems' }],
+    categories: ['Inventory Management', 'Warehouse Technology', 'Retail & Restaurant Tech', 'Inventory Consulting']
+  },
+  {
+    id: 'crm-sales',
+    title: 'CRM & Sales Automation',
+    slug: 'ultimate-guide-crm-software-growing-businesses',
+    keywords: ['crm', 'customer', 'lead', 'sales', 'retention', 'relation'],
+    products: [{ id: 'crm-custom', title: 'Desktop Software & Specialized CRM' }],
+    services: [{ id: 'ai-solutions', title: 'AI Architectures & Workflow Automation' }],
+    categories: ['Customer Management', 'Business Consulting', 'Customer Retention', 'Sales Automation']
+  },
+  {
+    id: 'ai-digital',
+    title: 'AI & Digital Solutions',
+    slug: 'ultimate-guide-to-business-technology-in-2026',
+    keywords: ['ai', 'automation', 'workflow', 'digital', 'software', 'web', 'mobile', 'website', 'security', 'cyber'],
+    products: [{ id: 'crm-custom', title: 'Desktop Software & Specialized CRM' }],
+    services: [{ id: 'ai-solutions', title: 'AI Architectures & Workflow Automation' }, { id: 'web-mobile', title: 'Web Apps & Native Mobile Architectures' }, { id: 'seo-branding', title: 'Technical SEO, Brand Identity & UI/UX Design' }],
+    categories: ['AI Solutions', 'Business Automation', 'Enterprise Analytics', 'Enterprise Tech Trends']
+  }
+];
+
+function getPillarForPost(post: BlogPost) {
+  const text = (post.slug + ' ' + post.title + ' ' + post.category).toLowerCase();
+  
+  for (const pillar of PILLARS) {
+    if (post.slug === pillar.slug) {
+      return pillar;
+    }
+  }
+
+  for (const pillar of PILLARS) {
+    if (pillar.categories.includes(post.category)) {
+      return pillar;
+    }
+  }
+
+  for (const pillar of PILLARS) {
+    for (const kw of pillar.keywords) {
+      if (text.includes(kw)) {
+        return pillar;
+      }
+    }
+  }
+  
+  return PILLARS[5];
+}
+
+function getContextualLinks(post: BlogPost) {
+  const pillar = getPillarForPost(post);
+  if (pillar.id === 'restaurant-pos') {
+    return [
+      { text: "FBR POS Integration Standards", slug: "fbr-pos-integration-restaurant-guide" },
+      { text: "Digital QR Menu Ordering System", slug: "qr-ordering-complete-guide" },
+      { text: "Kitchen Display Systems (KDS) Guide", slug: "kitchen-display-system-guide" }
+    ];
+  } else if (pillar.id === 'retail-pos') {
+    return [
+      { text: "Multi-Store Retail POS Strategies", slug: "multi-store-retail-pos-management-guide" },
+      { text: "Barcode Scanning Inventory Systems", slug: "barcode-scanning-system-retail-guide" },
+      { text: "Customer Credit Ledger (Khata) Guide", slug: "retail-pos-vs-traditional-billing-system" }
+    ];
+  } else if (pillar.id === 'erp-accounting') {
+    return [
+      { text: "Double-Entry Accounting Ledger Setup", slug: "financial-management-accounting-erp-systems" },
+      { text: "Biometric HR & Payroll Automation", slug: "human-resource-hr-management-erp" },
+      { text: "SME Productivity Scaling Blueprints", slug: "how-erp-software-improves-business-productivity" }
+    ];
+  } else if (pillar.id === 'inventory-warehouse') {
+    return [
+      { text: "Warehouse Batch Expiry Automation", slug: "warehouse-inventory-management-best-practices" },
+      { text: "Demand Forecasting & Replenishment", slug: "inventory-forecasting-demand-planning" },
+      { text: "Barcode Inventory Tracking Guide", slug: "barcode-inventory-management-system" }
+    ];
+  } else if (pillar.id === 'crm-sales') {
+    return [
+      { text: "Lead Management System Architecture", slug: "lead-management-system-complete-guide" },
+      { text: "WhatsApp & Sales Automation Loops", slug: "sales-automation-crm-software" },
+      { text: "Customer Retention & CRM Audits", slug: "customer-retention-strategies-crm" }
+    ];
+  } else {
+    return [
+      { text: "AI Automation Roadmap for SMEs", slug: "digital-transformation-roadmap-small-medium-businesses" },
+      { text: "Custom Software vs. Off-The-Shelf SaaS", slug: "custom-software-vs-off-the-shelf-software" },
+      { text: "Ultimate 2026 Business Technology Guide", slug: "ultimate-guide-to-business-technology-in-2026" }
+    ];
+  }
+}
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -42,6 +166,38 @@ export default function BlogPostPage({ params }: PageProps) {
   // Find current post
   const post = useMemo(() => {
     return BLOG_POSTS.find(p => p.slug === slug);
+  }, [slug]);
+
+  // Find current pillar
+  const currentPillar = useMemo(() => {
+    if (!post) return null;
+    return getPillarForPost(post);
+  }, [post]);
+
+  // Find 3 to 8 related posts in the same pillar
+  const relatedPosts = useMemo(() => {
+    if (!post || !currentPillar) return [];
+    const list = BLOG_POSTS.filter(p => {
+      if (p.slug === post.slug) return false;
+      const pPillar = getPillarForPost(p);
+      return pPillar?.id === currentPillar.id;
+    });
+    if (list.length >= 3) {
+      return list.slice(0, 6);
+    }
+    const extra = BLOG_POSTS.filter(p => p.slug !== post.slug && !list.some(existing => existing.slug === p.slug));
+    return [...list, ...extra].slice(0, 6);
+  }, [post, currentPillar]);
+
+  // Find popular guides
+  const popularPosts = useMemo(() => {
+    const pillarSlugs = PILLARS.map(p => p.slug);
+    return BLOG_POSTS.filter(p => p.slug !== slug && pillarSlugs.includes(p.slug)).slice(0, 4);
+  }, [slug]);
+
+  // Find latest blueprints
+  const latestPosts = useMemo(() => {
+    return BLOG_POSTS.filter(p => p.slug !== slug).slice(-4).reverse();
   }, [slug]);
 
   // Fetch detailed content dynamically
@@ -236,6 +392,12 @@ export default function BlogPostPage({ params }: PageProps) {
             <Link href="/" className="hover:text-[#FF6B00] transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-600" />
             <Link href="/blog" className="hover:text-[#FF6B00] transition-colors">Blog</Link>
+            {currentPillar && post.slug !== currentPillar.slug && (
+              <>
+                <ChevronRight className="w-4 h-4 text-gray-600" />
+                <Link href={`/blog/${currentPillar.slug}`} className="hover:text-[#FF6B00] transition-colors line-clamp-1">{currentPillar.title}</Link>
+              </>
+            )}
             <ChevronRight className="w-4 h-4 text-gray-600" />
             <span className="text-gray-300 line-clamp-1">{post.title}</span>
           </nav>
@@ -337,6 +499,61 @@ export default function BlogPostPage({ params }: PageProps) {
                   </button>
                 </div>
               </div>
+
+              {/* Related Products Section */}
+              {currentPillar && currentPillar.products.length > 0 && (
+                <div className="pt-4 border-t border-gray-200 space-y-2">
+                  <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Related Products</h4>
+                  <div className="space-y-1.5">
+                    {currentPillar.products.map(prod => (
+                      <Link 
+                        key={prod.id} 
+                        href={`/products#${prod.id}`}
+                        className="flex items-center text-xs font-bold text-gray-800 hover:text-[#FF6B00] transition-colors gap-1.5"
+                      >
+                        <span className="w-1.5 h-1.5 bg-[#FF6B00] rounded-full"></span>
+                        <span>{prod.title}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Services Section */}
+              {currentPillar && currentPillar.services.length > 0 && (
+                <div className="pt-4 border-t border-gray-200 space-y-2">
+                  <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Related Services</h4>
+                  <div className="space-y-1.5">
+                    {currentPillar.services.map(srv => (
+                      <Link 
+                        key={srv.id} 
+                        href={`/services#${srv.id}`}
+                        className="flex items-center text-xs font-bold text-gray-800 hover:text-[#FF6B00] transition-colors gap-1.5"
+                      >
+                        <span className="w-1.5 h-1.5 bg-[#FF6B00] rounded-full"></span>
+                        <span>{srv.title}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Categories Section */}
+              {currentPillar && (
+                <div className="pt-4 border-t border-gray-200 space-y-2">
+                  <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Related Categories</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {currentPillar.categories.slice(0, 3).map((cat, idx) => (
+                      <span 
+                        key={idx}
+                        className="text-[10px] font-medium bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </aside>
 
@@ -552,6 +769,116 @@ export default function BlogPostPage({ params }: PageProps) {
                 </div>
               )}
             </div>
+
+            {/* Pillar-Cluster Network Hub & Knowledge Center */}
+            <section className="bg-gray-50 border border-gray-150 rounded-4xl p-8 sm:p-10 space-y-8" id="pillar-cluster-hub">
+              <div className="space-y-2">
+                <span className="text-[#FF6B00] text-xs font-bold uppercase tracking-wider font-mono">Chishty Knowledge Network</span>
+                <h3 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">Enterprise Topic Architecture & Internal Resources</h3>
+                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-2xl font-light">
+                  Explore other interconnected modules and deep-dives in this cluster to gain complete master-level command over your business operations.
+                </p>
+              </div>
+
+              {/* Pillars Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
+                
+                {/* Column 1: Related Cluster Blueprints */}
+                <div className="md:col-span-6 space-y-4">
+                  <h4 className="text-xs font-black uppercase tracking-widest text-gray-900 border-b border-gray-200 pb-2 font-mono">
+                    Related {currentPillar?.title || "Cluster"} Blueprints
+                  </h4>
+                  <div className="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+                    {relatedPosts.map((rPost, idx) => (
+                      <Link 
+                        key={rPost.slug}
+                        href={`/blog/${rPost.slug}`}
+                        className="group block p-3.5 bg-white border border-gray-150 hover:border-[#FF6B00] rounded-xl transition-all"
+                      >
+                        <div className="flex justify-between items-start gap-2">
+                          <span className="text-[10px] font-bold text-[#FF6B00] uppercase font-mono">{rPost.category}</span>
+                          <span className="text-[9px] text-gray-400 font-mono flex-shrink-0">{rPost.readTime}</span>
+                        </div>
+                        <h5 className="text-xs font-bold text-gray-800 group-hover:text-[#FF6B00] transition-colors mt-1.5 line-clamp-1">{rPost.title}</h5>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 2: Contextual & Popular Guides */}
+                <div className="md:col-span-6 space-y-6">
+                  
+                  {/* Contextual Links */}
+                  <div className="space-y-3">
+                    <h4 className="text-xs font-black uppercase tracking-widest text-gray-900 border-b border-gray-200 pb-2 font-mono">
+                      Contextual Blueprint Connections
+                    </h4>
+                    <div className="space-y-2">
+                      {getContextualLinks(post).map((link, idx) => (
+                        <Link 
+                          key={idx}
+                          href={`/blog/${link.slug}`}
+                          className="flex items-center justify-between text-xs font-bold text-[#FF6B00] hover:text-[#FF8C39] bg-orange-50/40 hover:bg-orange-50/70 border border-orange-100/50 p-3 rounded-xl transition-all"
+                        >
+                          <span className="line-clamp-1">{link.text}</span>
+                          <ArrowRight className="w-3.5 h-3.5 shrink-0" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Popular Posts */}
+                  <div className="space-y-3">
+                    <h4 className="text-xs font-black uppercase tracking-widest text-gray-900 border-b border-gray-200 pb-2 font-mono">
+                      Popular Hub Guides
+                    </h4>
+                    <div className="space-y-2.5">
+                      {popularPosts.map(pPost => (
+                        <Link 
+                          key={pPost.slug}
+                          href={`/blog/${pPost.slug}`}
+                          className="flex items-center gap-3 group"
+                        >
+                          <div className="relative w-12 h-8 rounded-lg overflow-hidden shrink-0 border border-gray-150">
+                            <Image src={pPost.image} alt={pPost.title} fill className="object-cover" />
+                          </div>
+                          <div className="min-w-0">
+                            <h5 className="text-xs font-bold text-gray-700 group-hover:text-[#FF6B00] transition-colors line-clamp-1">{pPost.title}</h5>
+                            <span className="text-[10px] text-gray-400 font-mono">{pPost.category}</span>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Latest Blueprints Section */}
+              <div className="pt-6 border-t border-gray-200">
+                <h4 className="text-xs font-black uppercase tracking-widest text-gray-900 pb-4 font-mono">
+                  Latest Published Systems & Strategies
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                  {latestPosts.map(lPost => (
+                    <Link 
+                      key={lPost.slug}
+                      href={`/blog/${lPost.slug}`}
+                      className="group flex flex-col p-3.5 bg-white border border-gray-150 hover:border-gray-200 rounded-xl transition-all h-full justify-between"
+                    >
+                      <div>
+                        <span className="text-[9px] font-bold text-gray-400 font-mono uppercase">{lPost.date}</span>
+                        <h5 className="text-xs font-bold text-gray-800 group-hover:text-[#FF6B00] transition-colors mt-1 line-clamp-2 leading-relaxed">{lPost.title}</h5>
+                      </div>
+                      <span className="text-[9px] font-bold text-[#FF6B00] uppercase font-mono mt-2.5 inline-flex items-center">
+                        Read Guide <ArrowRight className="w-2.5 h-2.5 ml-1" />
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
 
             {/* Integrated Inline Conversion Consultation Block */}
             <div className="bg-gradient-to-tr from-[#0F0F0F] to-[#1F1F1F] text-white rounded-4xl p-8 sm:p-12 border border-white/5 relative overflow-hidden shadow-2xl">
