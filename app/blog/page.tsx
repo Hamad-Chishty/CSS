@@ -115,7 +115,7 @@ export default function BlogPage() {
               <div className="lg:col-span-7 relative aspect-video rounded-3xl overflow-hidden shadow-md">
                 <Image 
                   src={featuredPost.image} 
-                  alt={featuredPost.title} 
+                  alt={featuredPost.seo?.altText || featuredPost.title} 
                   fill
                   className="object-cover group-hover:scale-102 transition-transform duration-500"
                   priority
@@ -186,7 +186,7 @@ export default function BlogPage() {
                     <div className="aspect-video relative overflow-hidden bg-gray-100">
                       <Image 
                         src={post.image} 
-                        alt={post.title} 
+                        alt={post.seo?.altText || post.title} 
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, 50vw"
