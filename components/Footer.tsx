@@ -185,7 +185,7 @@ export default function Footer() {
             </div>
             <div>
               <h5 className="text-sm font-semibold text-white">Headquarters</h5>
-              <p className="text-gray-400 text-sm mt-1">Software Technology Park, Lahore, Pakistan</p>
+              <p className="text-gray-400 text-sm mt-1">General Bus Stand, Multan, Pakistan</p>
             </div>
           </div>
         </div>

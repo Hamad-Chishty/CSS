@@ -9,6 +9,7 @@ import {
   ChevronRight, ArrowRight, Quote, CheckCircle2, AlertCircle, Sparkles, HelpCircle, ChevronDown
 } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
+import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -252,7 +253,7 @@ export default function BlogPostPage({ params }: PageProps) {
             <div className="flex items-center space-x-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/10">
                 <Image 
-                  src={post.author.avatar} 
+                  src={post.author.name.includes("Hamad") ? hamadImage : post.author.avatar} 
                   alt={post.author.name} 
                   fill
                   className="object-cover"
@@ -498,7 +499,12 @@ export default function BlogPostPage({ params }: PageProps) {
             {/* Author Portrait Banner Bio */}
             <div className="border border-gray-150 rounded-4xl p-8 flex flex-col sm:flex-row gap-6 items-center bg-gray-50/50">
               <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md flex-shrink-0">
-                <Image src={post.author.avatar} alt={post.author.name} fill className="object-cover" />
+                <Image 
+                  src={post.author.name.includes("Hamad") ? hamadImage : post.author.avatar} 
+                  alt={post.author.name} 
+                  fill 
+                  className="object-cover" 
+                />
               </div>
               <div className="space-y-2 text-center sm:text-left">
                 <span className="text-[10px] font-bold text-[#FF6B00] uppercase tracking-widest font-mono">Written By Author</span>

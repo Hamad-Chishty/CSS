@@ -98,7 +98,7 @@ function ContactPageContent() {
                 Our Corporate Offices
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Connect directly with our support lines or schedule an on-site consultation at our Lahore headquarters.
+                Connect directly with our support lines or schedule an on-site consultation at our Multan headquarters.
               </p>
             </div>
 
@@ -137,7 +137,7 @@ function ContactPageContent() {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-gray-900">Software HQ</h3>
-                  <p className="text-gray-600 text-sm mt-0.5">Software Technology Park, Lahore, Pakistan</p>
+                  <p className="text-gray-600 text-sm mt-0.5">General Bus Stand, Multan, Pakistan</p>
                 </div>
               </div>
 
@@ -155,14 +155,14 @@ function ContactPageContent() {
             {/* Google Map Mock Card */}
             <div className="bg-gray-50 border border-gray-150 p-6 rounded-2xl space-y-4 shadow-sm" id="map-mockup-card">
               <div className="flex items-center justify-between text-xs text-gray-400">
-                <span>STP LAHORE CAMPUS</span>
+                <span>MULTAN CAMPUS</span>
                 <span className="text-emerald-500 font-bold">ONLINE STATUS</span>
               </div>
               <div className="aspect-video bg-gray-200/50 rounded-xl flex items-center justify-center border border-gray-150 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#FF6B00]/5 to-transparent"></div>
                 <div className="text-center space-y-2 relative z-10 px-4">
                   <MapPin className="w-8 h-8 text-[#FF6B00] mx-auto animate-bounce" />
-                  <span className="text-xs font-bold text-gray-800 block">Software Technology Park, Lahore</span>
+                  <span className="text-xs font-bold text-gray-800 block">General Bus Stand, Multan</span>
                 </div>
               </div>
             </div>

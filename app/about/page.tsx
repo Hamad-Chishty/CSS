@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'motion/react';
-import hamadImage from '@/src/assets/images/hamad_chishty_1784400179756.jpg';
+import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
 import { 
   Users, CheckCircle2, MessageSquare, Landmark, Shield, 
   Cpu, Sparkles, Star, Award, Heart, ShieldAlert,
@@ -49,7 +49,7 @@ export default function AboutPage() {
 
   const executiveTeam = [
     {
-      name: 'Hamad Waheed Chishty',
+      name: 'Hamad Chishty',
       role: 'Founder & CEO',
       image: hamadImage,
       bio: 'Directs the overall business architecture, core technology visions, and customer success strategies to scale enterprise organizations internationally.'
@@ -200,36 +200,14 @@ export default function AboutPage() {
               <motion.div 
                 key={idx}
                 whileHover={{ y: -6 }}
-                className="group relative bg-white/70 backdrop-blur-md border border-gray-100 rounded-3xl p-8 text-center space-y-6 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all duration-300 flex flex-col justify-between w-full sm:max-w-md md:w-[calc(50%-16px)] lg:w-[calc(33.333%-27px)] min-h-[380px]"
+                className="group relative bg-white/70 backdrop-blur-md border border-gray-100 rounded-3xl p-8 text-center space-y-4 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all duration-300 flex flex-col justify-between w-full sm:max-w-md md:w-[calc(50%-16px)] lg:w-[calc(33.333%-27px)] min-h-[260px]"
               >
-                <div className="space-y-4">
-                  {/* Circular portrait frame with orange accent border on hover or initials avatar */}
-                  {profile.image ? (
-                    <div className="relative w-24 h-24 mx-auto rounded-full p-1 border-2 border-gray-100 group-hover:border-[#FF6B00] transition-all duration-300 overflow-hidden flex-shrink-0">
-                      <Image 
-                        src={profile.image} 
-                        alt={profile.name} 
-                        width={96}
-                        height={96}
-                        className="w-full h-full rounded-full object-cover bg-gray-50"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                  ) : (
-                    <div className="relative w-24 h-24 mx-auto rounded-full border-2 border-dashed border-gray-250 group-hover:border-[#FF6B00]/40 group-hover:bg-orange-50/30 transition-all duration-300 flex items-center justify-center flex-shrink-0 bg-gray-50/50">
-                      <span className="text-xl font-black text-gray-400 group-hover:text-[#FF6B00] transition-colors font-mono">
-                        {profile.name.split(' ').map((n) => n[0]).join('').substring(0, 2)}
-                      </span>
-                    </div>
-                  )}
-                  
-                  <div>
-                    <h3 className="text-base sm:text-lg font-extrabold text-gray-900 group-hover:text-[#FF6B00] transition-colors">{profile.name}</h3>
-                    <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mt-0.5">{profile.relationship}</p>
-                  </div>
+                <div className="space-y-2">
+                  <h3 className="text-base sm:text-lg font-extrabold text-gray-900 group-hover:text-[#FF6B00] transition-colors">{profile.name}</h3>
+                  <p className="text-xs text-[#FF6B00] font-bold uppercase tracking-wider">{profile.relationship}</p>
                 </div>
 
-                <div className="relative mt-4 flex-grow flex flex-col justify-center">
+                <div className="relative mt-2 flex-grow flex flex-col justify-center">
                   <span className="absolute -top-3 -left-2 text-gray-100 group-hover:text-orange-50 transition-colors -z-10">
                     <Quote className="w-10 h-10 rotate-180 opacity-40" />
                   </span>
