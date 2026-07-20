@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { motion } from 'motion/react';
 import { 
   ShoppingBag, CheckCircle2, ChevronRight, MessageSquare, 
-  Database, Shield, Sparkles, HardDrive, Cpu, Heart, Landmark, Briefcase, Zap, Flame, RefreshCw
+  Database, Shield, Sparkles, HardDrive, Cpu, Heart, Landmark, Briefcase, Zap, RefreshCw
 } from 'lucide-react';
 
 export default function ProductsPage() {
   
   const products = [
     {
-      id: 'pos-restaurant',
+      id: 'restaurant-pos',
       icon: <ShoppingBag className="w-8 h-8 text-[#FF6B00]" />,
       title: 'Restaurant & Cafe POS Suite',
       badge: 'Bestseller',
@@ -27,7 +27,7 @@ export default function ProductsPage() {
       ]
     },
     {
-      id: 'pos-retail',
+      id: 'retail-pos',
       icon: <HardDrive className="w-8 h-8 text-[#FF6B00]" />,
       title: 'Retail & Grocery POS System',
       badge: 'Enterprise-Grade',
@@ -42,7 +42,7 @@ export default function ProductsPage() {
       ]
     },
     {
-      id: 'pos-pharmacy',
+      id: 'pharmacy-pos',
       icon: <Heart className="w-8 h-8 text-[#FF6B00]" />,
       title: 'Pharmacy & Medical Retail POS',
       badge: 'Compliance Locked',
@@ -57,7 +57,7 @@ export default function ProductsPage() {
       ]
     },
     {
-      id: 'erp-accounting',
+      id: 'erp-inventory',
       icon: <Landmark className="w-8 h-8 text-[#FF6B00]" />,
       title: 'Enterprise ERP & Financial Ledger',
       badge: 'All-In-One',
@@ -87,18 +87,33 @@ export default function ProductsPage() {
       ]
     },
     {
-      id: 'crm-custom',
+      id: 'crm',
       icon: <Zap className="w-8 h-8 text-[#FF6B00]" />,
-      title: 'Desktop Software & Specialized CRM',
+      title: 'Specialized CRM System',
       badge: 'Custom Deployed',
       tagline: 'Unrestricted offline capabilities, custom data pipelines, & localized files.',
-      desc: 'For environments where connection downtime is unacceptable. Built using optimized C++/Rust frameworks or high-speed localized architectures for flawless execution.',
+      desc: 'For environments where connection downtime is unacceptable. Built using optimized architectures for flawless execution and deep relationship management.',
       bullets: [
         'Secure SQLite/PostgreSQL localized instances for high safety',
         'Custom lead capture workflows and visual deal tracking stages',
         'Automated WhatsApp follow-up schedules and email loops',
         'Bespoke customer profile history panels',
         'Direct desktop API integrations with specialized hardware'
+      ]
+    },
+    {
+      id: 'custom-software',
+      icon: <Cpu className="w-8 h-8 text-[#FF6B00]" />,
+      title: 'Custom Software Development',
+      badge: 'Architectural Excellence',
+      tagline: 'Bespoke corporate pathways, hardware integration, and database compliance.',
+      desc: 'When standard frameworks fall short, our lead engineers build dedicated software stacks tailored exactly around your internal business logic.',
+      bullets: [
+        'Custom relational schemas designed from scratch',
+        'Sub-second query response speeds under massive concurrency',
+        'Industrial IoT and hardware peripheral listeners',
+        'Isolated secure virtual server cloud deployment',
+        'Absolute code IP ownership transfer upon delivery'
       ]
     }
   ];
@@ -133,7 +148,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-
+ 
       {/* Main Roster Listing */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         {products.map((prod, idx) => (
@@ -151,7 +166,7 @@ export default function ProductsPage() {
                   CSS ENGINE v4
                 </div>
                 <div className="p-4 bg-white rounded-2xl shadow-sm border border-gray-100/80 mb-6 flex items-center space-x-4">
-                  <div className="p-3 bg-[#FF6B00]/10 rounded-xl">
+                  <div className="p-3 bg-[#FF6B00]/10 rounded-xl shrink-0">
                     {prod.icon}
                   </div>
                   <div>
@@ -204,22 +219,19 @@ export default function ProductsPage() {
 
                 <div className="pt-6 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
                   <Link
+                    id={`prod-btn-details-${prod.id}`}
+                    href={`/products/${prod.id}`}
+                    className="bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-black/5 text-center transition-colors"
+                  >
+                    View Detailed Features
+                  </Link>
+                  <Link
                     id={`prod-btn-demo-${prod.id}`}
                     href={`/contact?product=${prod.id}`}
-                    className="bg-[#1C1C1C] hover:bg-[#2A2A2A] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-black/5 text-center transition-colors"
+                    className="bg-[#1C1C1C] hover:bg-[#2A2A2A] text-white font-bold text-sm px-6 py-3 rounded-xl text-center transition-colors"
                   >
-                    Schedule Live Feature Demo
+                    Schedule Live On-Site Demo
                   </Link>
-                  <a
-                    id={`prod-btn-wa-${prod.id}`}
-                    href={`https://wa.me/923006392025?text=Hello,%20I%20am%20interested%20in%20your%20${encodeURIComponent(prod.title)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 font-semibold text-sm px-6 py-3 rounded-xl text-center flex items-center justify-center space-x-1.5 transition-colors"
-                  >
-                    <MessageSquare className="w-4 h-4 text-[#FF6B00]" />
-                    <span>Get Pricing on WhatsApp</span>
-                  </a>
                 </div>
               </div>
             </div>

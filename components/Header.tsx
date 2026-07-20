@@ -7,7 +7,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { 
   Menu, X, ChevronDown, MessageSquare, Calendar, Shield, Cpu, 
   ShoppingBag, HardDrive, FileText, Heart, Sparkles, Building2, 
-  HelpCircle, Info, Landmark, Briefcase, Zap, Rocket
+  HelpCircle, Info, Landmark, Briefcase, Zap, Rocket,
+  UtensilsCrossed, Pill, Layers, Users, ArrowRight
 } from 'lucide-react';
 
 interface NavItem {
@@ -15,7 +16,7 @@ interface NavItem {
   href?: string;
   children?: {
     label: string;
-    description: string;
+    description?: string;
     href: string;
     icon: React.ReactNode;
   }[];
@@ -47,12 +48,14 @@ export default function Header() {
     {
       label: 'Products',
       children: [
-        { label: 'Restaurant & Cafe POS', description: 'Smart QR ordering, billing & table management.', href: '/products#pos-restaurant', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
-        { label: 'Retail & Grocery POS', description: 'Advanced barcode, stock control & billing.', href: '/products#pos-retail', icon: <HardDrive className="w-5 h-5 text-orange-500" /> },
-        { label: 'Pharmacy & Medical POS', description: 'Expiry alerts, batch tracking & prescription billing.', href: '/products#pos-pharmacy', icon: <Heart className="w-5 h-5 text-orange-500" /> },
-        { label: 'ERP & Accounting', description: 'Complete financial ledger, taxation & business intelligence.', href: '/products#erp-accounting', icon: <Landmark className="w-5 h-5 text-orange-500" /> },
-        { label: 'HR & Payroll Suite', description: 'Attendance, salary generation & staff management.', href: '/products#hr-payroll', icon: <Briefcase className="w-5 h-5 text-orange-500" /> },
-        { label: 'CRM & Custom Systems', description: 'Tailored lead pipelines, automation & desktop builds.', href: '/products#crm-custom', icon: <Zap className="w-5 h-5 text-orange-500" /> }
+        { label: 'Restaurant POS', href: '/products/restaurant-pos', icon: <UtensilsCrossed className="w-5 h-5 text-orange-500" /> },
+        { label: 'Retail POS', href: '/products/retail-pos', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
+        { label: 'Pharmacy POS', href: '/products/pharmacy-pos', icon: <Pill className="w-5 h-5 text-orange-500" /> },
+        { label: 'ERP & Inventory', href: '/products/erp-inventory', icon: <Layers className="w-5 h-5 text-orange-500" /> },
+        { label: 'HR & Payroll', href: '/products/hr-payroll', icon: <Briefcase className="w-5 h-5 text-orange-500" /> },
+        { label: 'CRM', href: '/products/crm', icon: <Users className="w-5 h-5 text-orange-500" /> },
+        { label: 'Custom Software', href: '/products/custom-software', icon: <Cpu className="w-5 h-5 text-orange-500" /> },
+        { label: 'View All Products', href: '/products', icon: <ArrowRight className="w-5 h-5 text-orange-500" /> }
       ]
     },
     {
@@ -194,11 +197,13 @@ export default function Header() {
                               }`}>
                                 {subItem.label}
                               </div>
-                              <div className={`text-xs mt-0.5 line-clamp-1 ${
-                                scrolled ? 'text-gray-500' : 'text-gray-400'
-                              }`}>
-                                {subItem.description}
-                              </div>
+                              {subItem.description && (
+                                <div className={`text-xs mt-0.5 line-clamp-1 ${
+                                  scrolled ? 'text-gray-500' : 'text-gray-400'
+                                }`}>
+                                  {subItem.description}
+                                </div>
+                              )}
                             </div>
                           </Link>
                         ))}

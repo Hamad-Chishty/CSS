@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { motion } from 'motion/react';
 import { 
   ArrowRight, MessageSquare, Shield, CheckCircle2, Cpu, Sparkles, 
-  ChevronRight, Play, Users, BarChart3, Database, Layers, 
-  Smartphone, Monitor, Zap, HelpCircle
+  ChevronRight, Users, BarChart3, Database, Layers, 
+  Smartphone, Zap, UtensilsCrossed, ShoppingBag, Pill, Briefcase
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -33,104 +33,6 @@ export default function HomePage() {
     setMousePos({ x, y });
   };
 
-  const stats = [
-    { value: '5,000+', label: 'Stores Standardized' },
-    { value: '$450M+', label: 'Yearly Volume Managed' },
-    { value: '99.99%', label: 'Cloud API Uptime' },
-    { value: '14+', label: 'Countries Supported' }
-  ];
-
-  const trustedBrands = [
-    'LuxeRetail Co.', 'BakeWay Premium', 'PharmaCare Network', 'UrbanGrocer', 'The Grand Bistro', 'Apex Logistics'
-  ];
-
-  const coreProducts = [
-    {
-      title: 'Restaurant & Cafe POS',
-      description: 'Engineered for fast-paced dining. Includes dynamic QR menus, kitchen display systems (KDS), and split-bill payments.',
-      badge: 'Popular',
-      link: '/products#pos-restaurant'
-    },
-    {
-      title: 'Retail & Grocery POS',
-      description: 'Advanced barcode matrix, real-time inventory synchronization, vendor purchase order automation, and customer loyalty.',
-      badge: 'Enterprise',
-      link: '/products#pos-retail'
-    },
-    {
-      title: 'Pharmacy POS',
-      description: 'Features drug expiration alerts, batch number tracking, prescription database matching, and drug interaction warnings.',
-      badge: 'Specialized',
-      link: '/products#pos-pharmacy'
-    },
-    {
-      title: 'ERP & Inventory Management',
-      description: 'Consolidate multiple warehouses, financial charts, purchase cycles, and real-time ledger accounting into a single portal.',
-      badge: 'Full Suite',
-      link: '/products#erp-accounting'
-    }
-  ];
-
-  const coreServices = [
-    {
-      icon: <Cpu className="w-6 h-6 text-orange-500" />,
-      title: 'Custom Software Development',
-      desc: 'Bespoke systems modeled around your specific workflow, built to optimize overhead and remove operational bottlenecks.'
-    },
-    {
-      icon: <Monitor className="w-6 h-6 text-orange-500" />,
-      title: 'Web & Mobile Applications',
-      desc: 'Stunning cross-platform iOS & Android apps paired with responsive web frontends featuring fast loading speeds.'
-    },
-    {
-      icon: <Sparkles className="w-6 h-6 text-orange-500" />,
-      title: 'AI & Business Automation',
-      desc: 'Introduce cognitive data models, custom CRM pipelines, and WhatsApp notification agents directly into your daily loops.'
-    },
-    {
-      icon: <Layers className="w-6 h-6 text-orange-500" />,
-      title: 'Digital Marketing & SEO',
-      desc: 'Establish rank supremacy with customized technical auditing, strategic content optimization, and performance campaigns.'
-    }
-  ];
-
-  const processSteps = [
-    { step: '01', title: 'Consultation & Schema Architecture', desc: 'We analyze your current operations, bottleneck matrices, and output requirements to design a tailored system blueprint.' },
-    { step: '02', title: 'High-Fidelity Interface Prototyping', desc: 'Our senior designers construct modern, high-contrast mockups representing the exact user journey for your team.' },
-    { step: '03', title: 'Enterprise-Grade Development', desc: 'We engineer using standard-compliant clean architectures, integrating ultra-fast state managers, redundant databases, and strict API structures.' },
-    { step: '04', title: 'Deployment, Training & Dedicated SLA', desc: 'We assist with data importing, train your staff on-site, and provide 24/7 dedicated system monitoring and support.' }
-  ];
-
-  const portfolioPreviews = [
-    {
-      title: 'BakeWay Premium POS Suite',
-      type: 'Bakery Chain POS & Inventory',
-      desc: 'Re-engineered payment pathways and automated daily ingredient level depletion checks across 14 separate locations.',
-      metric: '+34% Operating Speed'
-    },
-    {
-      title: 'Apex Global Logistics ERP',
-      type: 'Bespoke Corporate ERP Platform',
-      desc: 'Integrated real-time package delivery tracking, custom payroll, vehicle routing, and client billing portals.',
-      metric: '-22% Administrative Hours'
-    }
-  ];
-
-  const testimonials = [
-    {
-      quote: "Chishty Smart Solutions completely revolutionized how we handle billing and ingredients depletion across our bakery chain. The speed of their POS is unmatched.",
-      author: "Zainab Malik",
-      role: "Operations Director, BakeWay Premium",
-      image: "https://picsum.photos/seed/zainab/100/100"
-    },
-    {
-      quote: "The custom logistics ERP developed by their team cut down our reporting cycle by half. Their technical leadership and post-launch support have been exceptional.",
-      author: "Haris Mahmood",
-      role: "CEO, Apex Global Logistics",
-      image: "https://picsum.photos/seed/haris/100/100"
-    }
-  ];
-
   const faqs = [
     { q: 'How long does a complete POS or Custom ERP implementation take?', a: 'Standard POS configurations (Restaurant, Retail, Pharmacy) can be deployed within 3 to 7 business days, including hardware calibration. Large custom ERP and system integrations typically scale from 4 to 12 weeks depending on specific workflow requirements.' },
     { q: 'Can the POS operate offline if my internet connection fails?', a: 'Yes. Our POS architectures feature robust local synchronization engines. If your connection drops, all billing and transaction logs are stored locally on your desktop or device, and automatically synchronize with your cloud server once internet access is restored.' },
@@ -139,12 +41,11 @@ export default function HomePage() {
   ];
 
   return (
-    <div id="home-page-root" className="overflow-x-hidden">
+    <div id="home-page-root" className="overflow-x-hidden" onMouseMove={handleMouseMove}>
       
       {/* 1. HERO SECTION */}
       <section 
         id="hero-section" 
-        onMouseMove={handleMouseMove}
         className="relative bg-[#0F0F0F] pt-24 pb-20 lg:pt-36 lg:pb-32 text-white overflow-hidden border-b border-white/5"
       >
         {/* Animated fluid gradient background blobs */}
@@ -358,112 +259,57 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. PRODUCTS BENTO GRID */}
-      <section id="products-section" className="py-24 bg-gray-50/50">
+      {/* 3. WHY CHOOSE US */}
+      <section id="why-choose-us" className="py-24 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4" id="products-header">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              SaaS Products
+              Our Edge
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-              Enterprise POS & Core Management Software
+              Why Leaders Choose Chishty
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Explore our range of purpose-built POS applications and enterprise backbones, fully optimized for lightning-fast billing, security, and real-time operations.
+              We do not just sell licenses. We engineer custom performance backbones that standardize operations, eliminate waste, and secure absolute business reliability.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8" id="products-grid">
-            {coreProducts.map((prod) => (
-              <div 
-                key={prod.title}
-                className="bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl hover:border-gray-200 transition-all group flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-xs bg-gray-100 text-gray-700 font-bold px-3 py-1 rounded-full uppercase">
-                      {prod.badge}
-                    </span>
-                    <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-[#FF6B00] group-hover:translate-x-1 transition-all" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#FF6B00] transition-colors">
-                    {prod.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                    {prod.description}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <Zap className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Offline-First Resilience",
+                desc: "No internet, no downtime. All billing, receipts, and logs are kept secure on your local database nodes and synced smoothly when back online."
+              },
+              {
+                icon: <Cpu className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Hardware Compatible Sync",
+                desc: "Plugs seamlessly into barcode scales, cash drawers, biometric scanners, touch terminals, and local KDS screens."
+              },
+              {
+                icon: <Users className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Full On-Site Training",
+                desc: "We physically train your branch managers, cashier teams, and supervisors. Complete legacy inventory migration is handled for you."
+              },
+              {
+                icon: <Shield className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Strict SLA Guarantee",
+                desc: "Enterprise-grade uptime SLA, chronological operation logs, double-entry audit trials, and 24/7 dedicated support priority."
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-3 bg-[#FF6B00]/5 rounded-xl w-12 h-12 flex items-center justify-center mb-5 border border-[#FF6B00]/10">
+                  {item.icon}
                 </div>
-                <Link 
-                  href={prod.link}
-                  className="text-sm font-semibold text-[#FF6B00] hover:text-[#FF8C39] flex items-center"
-                >
-                  <span>Explore Product Capabilities</span>
-                  <ChevronRight className="w-4 h-4 ml-1" />
-                </Link>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-12">
-            <Link 
-              id="view-all-products-link"
-              href="/products" 
-              className="inline-flex items-center space-x-1.5 text-sm font-bold text-gray-900 hover:text-[#FF6B00] transition-colors"
-            >
-              <span>View All 12+ Specialized Products</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
         </div>
       </section>
 
-      {/* 4. SERVICES SHOWCASE */}
-      <section id="services-section" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto mb-20 space-y-4" id="services-header">
-            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              Agency Capabilities
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-              Bespoke Software Engineering & Automation
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              When standard POS or SaaS templates do not fit, our elite agency developers craft high-performance architectures tailored exactly to your brand goals.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="services-grid">
-            {coreServices.map((srv) => (
-              <div 
-                key={srv.title}
-                className="p-6 rounded-2xl bg-gray-50/50 hover:bg-white border border-gray-100 hover:border-gray-200 hover:shadow-xl transition-all"
-              >
-                <div className="p-3 bg-white border border-gray-100 rounded-xl w-12 h-12 flex items-center justify-center mb-6 shadow-sm">
-                  {srv.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{srv.title}</h3>
-                <p className="text-gray-600 text-xs leading-relaxed">{srv.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link 
-              id="view-all-services-link"
-              href="/services" 
-              className="bg-[#1C1C1C] hover:bg-[#2A2A2A] text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-lg transition-colors inline-block"
-            >
-              Explore Dedicated Services
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 5. DYNAMIC INDUSTRIES COMPONENT */}
+      {/* 4. INDUSTRIES */}
       <section id="industries-section" className="py-24 bg-[#1C1C1C] text-white relative overflow-hidden">
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -510,87 +356,268 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. OUR METHODOLOGY & TIMELINE */}
-      <section id="process-section" className="py-24 bg-white">
+      {/* 5. CORE FEATURES */}
+      <section id="core-features" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto mb-20 space-y-4" id="process-header">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              SLA Delivery Model
+              System Capabilities
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-              How We Engineer High-Impact Platforms
+              Robust Core Architecture
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our systematic digital engineering framework ensures zero system friction, rapid team boarding, and resilient cloud architecture.
+              Every Chishty software system is built on an enterprise-grade stack configured for low-overhead execution.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative" id="process-timeline">
-            {processSteps.map((step, idx) => (
-              <div key={idx} className="space-y-6 relative group">
-                <div className="text-5xl font-black text-gray-100 group-hover:text-[#FF6B00]/15 transition-colors font-mono">
-                  {step.step}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Dual-Engine Billing Flow",
+                desc: "Lightning-fast billing generation utilizing barcode workflows, touch input matrices, or shortcut keys. Handles dual taxation structures effortlessly.",
+                icon: <BarChart3 className="w-6 h-6 text-[#FF6B00]" />
+              },
+              {
+                title: "Double-Entry General Ledger",
+                desc: "A fully integrated financial module that charts real-time trial balance sheets, profit and loss logs, tax breakdowns, and payment gateway reconcile sheets.",
+                icon: <Database className="w-6 h-6 text-[#FF6B00]" />
+              },
+              {
+                title: "Advanced Batch Stock Control",
+                desc: "Tracks product inventory using multi-warehouse batched numbers, expiry alert matrices, manufacturer replenishment levels, and custom product barcode printers.",
+                icon: <Layers className="w-6 h-6 text-[#FF6B00]" />
+              },
+              {
+                title: "Multi-Node Cloud Sync",
+                desc: "Secure cloud database nodes synchronize active branch terminals. Supervisors get dynamic executive dashboards accessible on any mobile browser.",
+                icon: <Smartphone className="w-6 h-6 text-[#FF6B00]" />
+              }
+            ].map((feat, idx) => (
+              <div key={idx} className="flex gap-5 p-6 rounded-2xl bg-gray-50/50 border border-gray-100 hover:bg-white hover:border-gray-200 transition-all">
+                <div className="p-3 bg-white border border-gray-100 rounded-xl w-12 h-12 flex items-center justify-center shadow-sm shrink-0">
+                  {feat.icon}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 text-xs leading-relaxed">
-                  {step.desc}
-                </p>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{feat.title}</h3>
+                  <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">{feat.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. PRODUCTS PREVIEW */}
+      <section id="products-preview" className="py-24 bg-gray-50/50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
+              Product Suite
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+              Our Specialized Softwares
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Explore our range of high-performance billing and management platforms.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Restaurant POS',
+                desc: 'Table billing, digital kitchen screens, and QR menus.',
+                icon: <UtensilsCrossed className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'restaurant-pos'
+              },
+              {
+                title: 'Retail POS',
+                desc: 'Lightning checkouts and real-time stock counting.',
+                icon: <ShoppingBag className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'retail-pos'
+              },
+              {
+                title: 'Pharmacy POS',
+                desc: 'Batch drug tracking and pharmaceutical expiry alerts.',
+                icon: <Pill className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'pharmacy-pos'
+              },
+              {
+                title: 'ERP & Inventory',
+                desc: 'Double-entry ledgers, dynamic fiscal charts, and warehousing.',
+                icon: <Layers className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'erp-inventory'
+              },
+              {
+                title: 'HR & Payroll',
+                desc: 'Biometric tracking, automated payslips, and staff rosters.',
+                icon: <Briefcase className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'hr-payroll'
+              },
+              {
+                title: 'CRM',
+                desc: 'Offline sync deal pipelines, WhatsApp alerts, and client history.',
+                icon: <Users className="w-6 h-6 text-[#FF6B00]" />,
+                slug: 'crm'
+              }
+            ].map((prod) => (
+              <div 
+                key={prod.title}
+                className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:border-gray-200 transition-all group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="p-3 bg-[#FF6B00]/5 rounded-xl w-12 h-12 flex items-center justify-center mb-5 border border-[#FF6B00]/10">
+                    {prod.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#FF6B00] transition-colors">
+                    {prod.title}
+                  </h3>
+                  <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">
+                    {prod.desc}
+                  </p>
+                </div>
+                <Link 
+                  href={`/products/${prod.slug}`}
+                  className="inline-flex items-center text-xs sm:text-sm font-semibold text-[#FF6B00] hover:text-[#FF8C39] mt-2 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Learn More</span>
+                  <ChevronRight className="w-4 h-4 ml-0.5" />
+                </Link>
               </div>
             ))}
           </div>
 
+          <div className="text-center mt-12">
+            <Link 
+              id="view-all-products-link"
+              href="/products" 
+              className="bg-[#1C1C1C] hover:bg-[#2A2A2A] text-white px-8 py-4 rounded-xl text-sm font-bold shadow-lg transition-colors inline-block"
+            >
+              View All Products
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* 7. REAL-TIME STATS PANEL PLACEHOLDER */}
-      <section id="stats-section" className="py-20 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest font-mono">Verified Performance Metrics</p>
-          <p className="text-sm text-gray-600 max-w-xl mx-auto leading-relaxed">
-            Chishty Smart Solutions is compiling verified deployment metrics, including transaction success ratios, processing uptime SLA, and localized store onboarding statistics. Live audit proofs are available through our chief developer.
-          </p>
-        </div>
-      </section>
-
-      {/* 8. PORTFOLIO PREVIEW PLACEHOLDER */}
-      <section id="portfolio-preview" className="py-24 bg-white">
+      {/* 7. INTEGRATIONS */}
+      <section id="integrations-section" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-50 border border-gray-150 rounded-3xl p-8 sm:p-12 text-center space-y-6 max-w-4xl mx-auto shadow-sm">
-            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full inline-block">
-              Case Study Directories
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
+              SaaS Sync
             </span>
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              Active Installation Portfolio
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+              Seamless Local & Cloud Integrations
             </h2>
-            <div className="py-4 border-y border-gray-100/80 my-4">
-              <span className="text-base font-bold text-gray-400 uppercase tracking-widest font-mono block">
-                Commercial Deployments Under Review
-              </span>
-            </div>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">
-              Our bespoke software setups for bakeries, logistics hubs, and pharmacy networks operate on private corporate server clusters. Inquire on WhatsApp to consult our chief architect and review active demo environments matching your specific workflow.
+            <p className="text-gray-600 text-lg leading-relaxed">
+              We sync with local hardware and global cloud APIs to automate alerts, payments, and tracking.
             </p>
-            <div className="pt-4">
-              <Link 
-                id="portfolio-placeholder-cta"
-                href="/contact" 
-                className="bg-[#1C1C1C] hover:bg-[#2A2A2A] text-white px-6 py-3 rounded-xl text-sm font-bold transition-all inline-flex items-center space-x-1.5"
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {[
+              { title: "WhatsApp API", subtitle: "Billing alerts" },
+              { title: "SMS Engine", subtitle: "Instant customer logs" },
+              { title: "Local Banks", subtitle: "Direct bank sync" },
+              { title: "Stripe", subtitle: "Global payment flow" },
+              { title: "Thermal Devices", subtitle: "Receipt printing" },
+              { title: "Biometric Scanners", subtitle: "Face / Thumb clock" }
+            ].map((intg, idx) => (
+              <div key={idx} className="bg-gray-50/50 border border-gray-100 rounded-xl p-5 text-center hover:bg-white hover:shadow-sm transition-all">
+                <span className="font-extrabold text-sm text-gray-950 block">{intg.title}</span>
+                <span className="text-[10px] text-gray-400 mt-1 block font-medium">{intg.subtitle}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. PRICING */}
+      <section id="pricing-section" className="py-24 bg-gray-50/50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
+              Pricing Options
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+              SLA-Tiered Business Plans
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Flexible options crafted to fit standard business branches and large corporate franchises.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                title: "Starter (POS Basic)",
+                desc: "Ideal for local bakeries, standard retail kiosks, and cafes.",
+                price: "Custom Quote",
+                features: ["Dual-Engine local billing", "Basic barcode support", "Standard local SQLite database", "Email receipts module", "On-site setup & training"]
+              },
+              {
+                title: "Growth (POS + Stock)",
+                desc: "Perfect for expanding outlets requiring deep stock tracing.",
+                price: "Custom Quote",
+                popular: true,
+                features: ["Everything in Starter", "Multi-branch cloud database", "Expiry warning matrices", "Min stock replenishment alerts", "Supplier account sheets", "Priority SLA hotline"]
+              },
+              {
+                title: "Enterprise (Custom ERP)",
+                desc: "Comprehensive database solutions for corporate franchises.",
+                price: "Custom Quote",
+                features: ["Everything in Growth", "Double-entry accounting maps", "Bespoke ledger automation", "Biometric attendance sync", "Custom WhatsApp gateway", "24/7 dedicated local engineer"]
+              }
+            ].map((plan, idx) => (
+              <div 
+                key={idx} 
+                className={`bg-white border rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow relative ${
+                  plan.popular ? 'border-[#FF6B00] ring-2 ring-[#FF6B00]/10' : 'border-gray-150'
+                }`}
               >
-                <span>Inquire About Portfolios</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                {plan.popular && (
+                  <span className="absolute top-0 right-6 -translate-y-1/2 bg-[#FF6B00] text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                    Most Popular
+                  </span>
+                )}
+                <div>
+                  <h3 className="text-lg font-black text-gray-950">{plan.title}</h3>
+                  <p className="text-gray-500 text-xs mt-2 min-h-[32px]">{plan.desc}</p>
+                  <div className="my-5 border-y border-gray-100 py-3">
+                    <span className="text-2xl font-black text-gray-900">{plan.price}</span>
+                  </div>
+                  <ul className="space-y-2.5">
+                    {plan.features.map((feat, fidx) => (
+                      <li key={fidx} className="flex items-start text-xs font-medium text-gray-600">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mr-2 mt-0.5" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="pt-6 mt-6 border-t border-gray-100">
+                  <Link 
+                    href="/pricing"
+                    className={`block w-full text-center text-xs sm:text-sm font-bold py-3 rounded-xl transition-colors ${
+                      plan.popular 
+                        ? 'bg-[#FF6B00] text-white hover:bg-[#FF8C39]' 
+                        : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                    }`}
+                  >
+                    View Pricing Details
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* 9. CLIENT TESTIMONIALS PLACEHOLDER */}
-      <section id="testimonials-section" className="py-24 bg-gray-50/50 border-t border-gray-100">
+      <section id="testimonials-section" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white border border-gray-100 rounded-3xl p-8 sm:p-12 text-center space-y-6 max-w-4xl mx-auto shadow-sm">
+          <div className="bg-gray-50 border border-gray-150 rounded-3xl p-8 sm:p-12 text-center space-y-6 max-w-4xl mx-auto shadow-sm">
             <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
               Client Feedback
             </span>
@@ -610,7 +637,7 @@ export default function HomePage() {
       </section>
 
       {/* 10. FAQS */}
-      <section id="faq-section" className="py-24 bg-white">
+      <section id="faq-section" className="py-24 bg-gray-50/50 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center mb-16 space-y-4" id="faq-header">
@@ -626,7 +653,7 @@ export default function HomePage() {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
-                className="border border-gray-100 rounded-xl overflow-hidden transition-all duration-200"
+                className="border border-gray-100 bg-white rounded-xl overflow-hidden transition-all duration-200"
               >
                 <button
                   id={`faq-btn-${idx}`}
