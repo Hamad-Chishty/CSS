@@ -74,7 +74,6 @@ export default function Header() {
     },
     { label: 'Industries', href: '/industries' },
     { label: 'Features', href: '/features' },
-    { label: 'Portfolio', href: '/portfolio' },
     { label: 'Pricing', href: '/pricing' },
     { label: 'FAQ', href: '/faq' },
     { label: 'About', href: '/about' },
