@@ -293,8 +293,14 @@ export default function BlogPage() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-black tracking-tight text-white">Join our Systems Intelligence Dispatch</h3>
+                <div className="bg-[#FF6B00]/10 border border-[#FF6B00]/20 rounded-xl p-3 text-xs text-gray-200 space-y-1">
+                  <span className="font-extrabold text-[#FF6B00] uppercase tracking-wider block text-[10px]">🎁 INSTANT GIFT</span>
+                  <p className="font-medium leading-relaxed">
+                    Get our exclusive <strong className="text-white">2026 Pakistan Retail & Restaurant Growth Checklist (PDF)</strong> sent directly to your inbox.
+                  </p>
+                </div>
                 <p className="text-gray-400 text-xs leading-relaxed">
-                  Join 1,200+ Pakistani founders and retailers receiving weekly operational audits and software optimization blueprints directly in their inboxes.
+                  Join 1,200+ Pakistani founders and retailers receiving weekly operational audits and software optimization blueprints.
                 </p>
 
                 <AnimatePresence mode="wait">
@@ -324,13 +330,23 @@ export default function BlogPage() {
                     <motion.div 
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 p-4 rounded-xl flex items-start gap-3 mt-4"
+                      className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 p-4 rounded-xl space-y-3 mt-4"
                     >
-                      <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="text-xs font-bold">Subscription Confirmed!</h4>
-                        <p className="text-[10px] mt-1 text-emerald-300/80 leading-relaxed">You are now registered for the Systems Intelligence Dispatch.</p>
+                      <div className="flex items-start gap-3">
+                        <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <h4 className="text-xs font-bold">Subscription Confirmed!</h4>
+                          <p className="text-[10px] mt-1 text-emerald-300/80 leading-relaxed">You are now registered for the Systems Intelligence Dispatch.</p>
+                        </div>
                       </div>
+                      <a
+                        id="download-lead-magnet-btn"
+                        href="/chishty-restaurant-pos-guides.zip"
+                        download
+                        className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg flex items-center justify-center space-x-1.5 transition-colors text-center"
+                      >
+                        <span>📥 Download 2026 Growth Checklist</span>
+                      </a>
                     </motion.div>
                   )}
                 </AnimatePresence>

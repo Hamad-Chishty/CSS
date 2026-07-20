@@ -21,6 +21,7 @@ export default function ContactPage() {
 
 function ContactPageContent() {
   const searchParams = useSearchParams();
+  const isDemoMode = searchParams.get('demo') === 'true';
   
   const [formData, setFormData] = useState({
     fullName: '',
@@ -174,128 +175,162 @@ function ContactPageContent() {
             <div className="bg-gray-50 border border-gray-150 rounded-3xl p-8 sm:p-12 shadow-sm">
               
               {!submitted ? (
-                <form id="system-blueprint-form" onSubmit={handleSubmit} className="space-y-6">
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="fullName" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Full Name *</label>
-                      <input 
-                        type="text" 
-                        id="fullName" 
-                        name="fullName" 
-                        required
-                        value={formData.fullName}
-                        onChange={handleChange}
-                        placeholder="Zainab Malik"
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="companyName" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Company Name *</label>
-                      <input 
-                        type="text" 
-                        id="companyName" 
-                        name="companyName" 
-                        required
-                        value={formData.companyName}
-                        onChange={handleChange}
-                        placeholder="BakeWay Premium"
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
-                      />
-                    </div>
+                <div className="space-y-6">
+                  {/* Dynamic Form Header */}
+                  <div className="border-b border-gray-200/60 pb-6">
+                    <span className="text-[10px] font-extrabold text-[#FF6B00] uppercase tracking-widest font-mono bg-[#FF6B00]/10 px-3 py-1 rounded-full">
+                      {isDemoMode ? 'Free Live Platform Demo' : 'Enterprise System Blueprint'}
+                    </span>
+                    <h3 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight mt-3">
+                      {isDemoMode ? 'Reserve Your Live Demo Slot' : 'Configure Your Custom System'}
+                    </h3>
+                    <p className="text-gray-500 text-xs sm:text-sm mt-1 leading-relaxed">
+                      {isDemoMode 
+                        ? 'Schedule a screen-share session with our Chief Architect. See raw speed, database queries, and hardware printers live.'
+                        : 'Submit your business details and hardware requirements to obtain a personalized deployment plan.'}
+                    </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="whatsapp" className="text-xs font-bold text-gray-600 uppercase tracking-wider">WhatsApp Number *</label>
-                      <input 
-                        type="tel" 
-                        id="whatsapp" 
-                        name="whatsapp" 
-                        required
-                        value={formData.whatsapp}
-                        onChange={handleChange}
-                        placeholder="+92 300 6392025"
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
-                      />
+                  <form id="system-blueprint-form" onSubmit={handleSubmit} className="space-y-6">
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="fullName" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Full Name *</label>
+                        <input 
+                          type="text" 
+                          id="fullName" 
+                          name="fullName" 
+                          required
+                          value={formData.fullName}
+                          onChange={handleChange}
+                          placeholder="Zainab Malik"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="companyName" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Company Name *</label>
+                        <input 
+                          type="text" 
+                          id="companyName" 
+                          name="companyName" 
+                          required
+                          value={formData.companyName}
+                          onChange={handleChange}
+                          placeholder="BakeWay Premium"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        />
+                      </div>
                     </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Email Address</label>
-                      <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="name@company.com"
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
-                      />
-                    </div>
-                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="whatsapp" className="text-xs font-bold text-gray-600 uppercase tracking-wider">WhatsApp Number *</label>
+                        <input 
+                          type="tel" 
+                          id="whatsapp" 
+                          name="whatsapp" 
+                          required
+                          value={formData.whatsapp}
+                          onChange={handleChange}
+                          placeholder="+92 300 6392025"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Email Address</label>
+                        <input 
+                          type="email" 
+                          id="email" 
+                          name="email" 
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="name@company.com"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="industry" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Industry Vertical *</label>
+                        <select 
+                          id="industry" 
+                          name="industry"
+                          value={formData.industry}
+                          onChange={handleChange}
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        >
+                          <option value="restaurant">Restaurant & Cafe</option>
+                          <option value="retail">Retail Store</option>
+                          <option value="grocery">Grocery & Supermarket</option>
+                          <option value="bakery">Bakery & Sweets</option>
+                          <option value="pharmacy">Pharmacy</option>
+                          <option value="hotel">Hotel Management</option>
+                          <option value="corporate">Corporate / ERP</option>
+                          <option value="other">Other specialized niche</option>
+                        </select>
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="systemType" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Preferred License *</label>
+                        <select 
+                          id="systemType" 
+                          name="systemType"
+                          value={formData.systemType}
+                          onChange={handleChange}
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        >
+                          <option value="standard-pos">Standard POS License</option>
+                          <option value="multi-branch">Multi-Branch Pro License</option>
+                          <option value="custom-dev">Custom ERP / Database build</option>
+                          <option value="whatsapp-integration">WhatsApp API Integration</option>
+                        </select>
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
-                      <label htmlFor="industry" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Industry Vertical *</label>
-                      <select 
-                        id="industry" 
-                        name="industry"
-                        value={formData.industry}
+                      <label htmlFor="message" className="text-xs font-bold text-gray-600 uppercase tracking-wider">System Specifications / Notes *</label>
+                      <textarea 
+                        id="message" 
+                        name="message" 
+                        rows={5}
+                        required
+                        value={formData.message}
                         onChange={handleChange}
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                        placeholder={isDemoMode 
+                          ? "What specific features or hardware integration would you like to see during the screen-share? (e.g. thermal printers, SMS APIs, inventory alerts...)" 
+                          : "Outline any special recipe calculations, printer hardware setups, warehouse requirements, or biometric clock syncs you need..."}
+                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none resize-none"
+                      />
+                    </div>
+
+                    <div className="pt-2">
+                      <button 
+                        id="submit-blueprint-btn"
+                        type="submit" 
+                        className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all flex items-center justify-center space-x-2"
                       >
-                        <option value="restaurant">Restaurant & Cafe</option>
-                        <option value="retail">Retail Store</option>
-                        <option value="grocery">Grocery & Supermarket</option>
-                        <option value="bakery">Bakery & Sweets</option>
-                        <option value="pharmacy">Pharmacy</option>
-                        <option value="hotel">Hotel Management</option>
-                        <option value="corporate">Corporate / ERP</option>
-                        <option value="other">Other specialized niche</option>
-                      </select>
+                        <Send className="w-4 h-4" />
+                        <span>{isDemoMode ? 'Book My Live Demo Slot' : 'Submit Blueprint Request'}</span>
+                      </button>
                     </div>
-                    <div className="space-y-2">
-                      <label htmlFor="systemType" className="text-xs font-bold text-gray-600 uppercase tracking-wider">Preferred License *</label>
-                      <select 
-                        id="systemType" 
-                        name="systemType"
-                        value={formData.systemType}
-                        onChange={handleChange}
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
-                      >
-                        <option value="standard-pos">Standard POS License</option>
-                        <option value="multi-branch">Multi-Branch Pro License</option>
-                        <option value="custom-dev">Custom ERP / Database build</option>
-                        <option value="whatsapp-integration">WhatsApp API Integration</option>
-                      </select>
+
+                    {/* Security and Trust Microcopy */}
+                    <div className="flex items-center justify-center space-x-6 text-xs text-gray-400 font-medium pt-3 border-t border-gray-200/50">
+                      <span className="flex items-center gap-1">
+                        <Shield className="w-3.5 h-3.5 text-emerald-500" /> Secure Encryption
+                      </span>
+                      <span className="w-1.5 h-1.5 bg-gray-300 rounded-full"></span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5 text-emerald-500" /> &lt; 15m Response SLA
+                      </span>
+                      <span className="w-1.5 h-1.5 bg-gray-300 rounded-full"></span>
+                      <span className="flex items-center gap-1">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" /> Zero Obligation
+                      </span>
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-xs font-bold text-gray-600 uppercase tracking-wider">System Specifications / Notes *</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
-                      rows={5}
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Outline any special recipe calculations, printer hardware setups, warehouse requirements, or biometric clock syncs you need..."
-                      className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none resize-none"
-                    />
-                  </div>
-
-                  <div className="pt-2">
-                    <button 
-                      id="submit-blueprint-btn"
-                      type="submit" 
-                      className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all flex items-center justify-center space-x-2"
-                    >
-                      <Send className="w-4 h-4" />
-                      <span>Submit Blueprint Request</span>
-                    </button>
-                  </div>
-
-                </form>
+                  </form>
+                </div>
               ) : (
                 <div id="contact-success-card" className="text-center space-y-6 py-8">
                   <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-600">

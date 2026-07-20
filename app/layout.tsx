@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import dynamic from 'next/dynamic';
 
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'));
+const StickyCTA = dynamic(() => import('@/components/StickyCTA'));
 
 const inter = Inter({
   subsets: ['latin'],
@@ -111,6 +112,7 @@ export default function RootLayout({
 
         {/* Global Sticky Contact Tools */}
         <WhatsAppButton />
+        <StickyCTA />
       </body>
     </html>
   );

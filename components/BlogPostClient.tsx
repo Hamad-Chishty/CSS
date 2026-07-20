@@ -900,7 +900,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
                     <span>WhatsApp Strategy Call</span>
                   </a>
                   <Link 
-                    href="/contact"
+                    href="/contact?demo=true"
                     className="inline-flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-4 rounded-xl font-bold text-sm transition-colors"
                   >
                     <span>Request Custom Demo</span>
