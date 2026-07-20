@@ -3,7 +3,9 @@ import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import dynamic from 'next/dynamic';
+
+const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'));
 
 const inter = Inter({
   subsets: ['latin'],

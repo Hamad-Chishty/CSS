@@ -414,6 +414,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
                   alt={post.author.name} 
                   fill
                   className="object-cover"
+                  sizes="48px"
                 />
               </div>
               <div>
@@ -449,6 +450,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
             fill
             className="object-cover"
             priority
+            sizes="(max-width: 1200px) 100vw, 1200px"
           />
         </div>
 
@@ -716,6 +718,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
                   alt={post.author.name} 
                   fill 
                   className="object-cover" 
+                  sizes="96px"
                 />
               </div>
               <div className="space-y-2 text-center sm:text-left">
@@ -835,7 +838,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
                           className="flex items-center gap-3 group"
                         >
                           <div className="relative w-12 h-8 rounded-lg overflow-hidden shrink-0 border border-gray-150">
-                            <Image src={pPost.image} alt={pPost.title} fill className="object-cover" />
+                            <Image src={pPost.image} alt={pPost.title} fill className="object-cover" sizes="48px" />
                           </div>
                           <div className="min-w-0">
                             <h5 className="text-xs font-bold text-gray-700 group-hover:text-[#FF6B00] transition-colors line-clamp-1">{pPost.title}</h5>

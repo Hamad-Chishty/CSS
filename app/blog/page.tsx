@@ -135,6 +135,7 @@ export default function BlogPage() {
                   fill
                   className="object-cover group-hover:scale-102 transition-transform duration-500"
                   priority
+                  sizes="(max-width: 1024px) 100vw, 720px"
                 />
               </div>
               <div className="lg:col-span-5 space-y-5">
@@ -159,6 +160,7 @@ export default function BlogPage() {
                         alt={featuredPost.author.name} 
                         fill
                         className="object-cover"
+                        sizes="40px"
                       />
                     </div>
                     <div>
@@ -246,6 +248,7 @@ export default function BlogPage() {
                               alt={post.author.name} 
                               fill 
                               className="object-cover" 
+                              sizes="24px"
                             />
                           </div>
                           <span className="text-[10px] font-bold text-gray-700">{post.author.name}</span>
