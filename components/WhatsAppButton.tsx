@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
             <button 
               id="wa-tooltip-close"
               onClick={() => setShowTooltip(false)}
-              className="absolute top-2.5 right-2.5 text-gray-400 hover:text-white transition-colors"
+              className="absolute top-2.5 right-2.5 text-gray-400 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-full p-0.5"
               aria-label="Close message"
             >
               <X className="w-4 h-4" />
@@ -51,7 +51,7 @@ export default function WhatsAppButton() {
               href="https://wa.me/923006392025"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center space-x-1.5 transition-colors self-start"
+              className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center space-x-1.5 transition-colors self-start focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1C1C] focus-visible:outline-none"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Start WhatsApp Chat</span>
@@ -68,7 +68,7 @@ export default function WhatsAppButton() {
         rel="noopener noreferrer"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="pointer-events-auto bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center relative group transition-colors duration-200"
+        className="pointer-events-auto bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center relative group transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:outline-none"
         aria-label="Contact us on WhatsApp"
       >
         {/* Soft breathing radial ring */}

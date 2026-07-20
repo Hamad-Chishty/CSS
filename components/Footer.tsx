@@ -66,7 +66,7 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-6" id="footer-brand-col">
-            <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0">
+            <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1C1C] focus-visible:outline-none rounded-xl">
               <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-[#FF6B00]/20">
                 C
               </span>
@@ -88,7 +88,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400"
+                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -98,7 +98,7 @@ export default function Footer() {
                 href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400"
+                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -108,7 +108,7 @@ export default function Footer() {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400"
+                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />
@@ -118,7 +118,7 @@ export default function Footer() {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400"
+                className="w-9 h-9 bg-white/5 hover:bg-[#FF6B00]/10 hover:text-[#FF6B00] rounded-xl flex items-center justify-center transition-all duration-200 text-gray-400 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -138,7 +138,7 @@ export default function Footer() {
                     <li key={link.label}>
                       <Link 
                         href={link.href} 
-                        className="text-gray-400 hover:text-[#FF6B00] text-sm transition-colors flex items-center group/link"
+                        className="text-gray-400 hover:text-[#FF6B00] text-sm transition-colors flex items-center group/link focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded px-1"
                       >
                         <span>{link.label}</span>
                         <ArrowUpRight className="w-3 h-3 ml-0.5 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-all" />
@@ -173,7 +173,8 @@ export default function Footer() {
                 href="https://wa.me/923006392025" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#FF6B00] text-sm mt-1 block transition-colors whitespace-nowrap font-medium"
+                aria-label="Chat on WhatsApp at +92 300 6392025"
+                className="text-gray-400 hover:text-[#FF6B00] text-sm mt-1 block transition-colors whitespace-nowrap font-medium focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded px-1 w-fit"
               >
                 +92 300 6392025 (Open Chat)
               </a>
@@ -196,11 +197,11 @@ export default function Footer() {
             <span>© {currentYear} Chishty Smart Solutions. All rights reserved.</span>
           </div>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="hover:text-white transition-colors flex items-center space-x-1">
+            <Link href="/privacy" className="hover:text-white transition-colors flex items-center space-x-1 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded px-1">
               <Shield className="w-3.5 h-3.5" />
               <span>Privacy Policy</span>
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors flex items-center space-x-1">
+            <Link href="/terms" className="hover:text-white transition-colors flex items-center space-x-1 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded px-1">
               <Globe className="w-3.5 h-3.5" />
               <span>Terms of Service</span>
             </Link>

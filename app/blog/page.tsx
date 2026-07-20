@@ -314,14 +314,15 @@ export default function BlogPage() {
                       <input 
                         type="email" 
                         required
+                        aria-label="Email address for newsletter subscription"
                         placeholder="business@company.com" 
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 text-xs focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 text-xs focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none outline-none transition-all"
                       />
                       <button 
                         type="submit"
-                        className="w-full py-3 bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold text-xs rounded-xl shadow-md shadow-[#FF6B00]/10 transition-colors"
+                        className="w-full py-3 bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold text-xs rounded-xl shadow-md shadow-[#FF6B00]/10 transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1C1C] focus-visible:outline-none"
                       >
                         Subscribe to Dispatch
                       </button>
@@ -343,7 +344,7 @@ export default function BlogPage() {
                         id="download-lead-magnet-btn"
                         href="/chishty-restaurant-pos-guides.zip"
                         download
-                        className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg flex items-center justify-center space-x-1.5 transition-colors text-center"
+                        className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg flex items-center justify-center space-x-1.5 transition-colors text-center focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:outline-none"
                       >
                         <span>📥 Download 2026 Growth Checklist</span>
                       </a>

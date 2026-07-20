@@ -102,7 +102,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0" id="header-logo-link">
+          <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none rounded-xl" id="header-logo-link" aria-label="Chishty Smart Solutions Homepage">
             <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-[#FF6B00]/20 transition-transform duration-300 group-hover:scale-105">
               C
             </span>
@@ -132,7 +132,10 @@ export default function Header() {
                 {item.children ? (
                   <button
                     id={`nav-btn-${item.label.toLowerCase()}`}
-                    className={`flex items-center space-x-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    aria-haspopup="true"
+                    aria-expanded={activeDropdown === item.label}
+                    aria-controls={`dropdown-menu-${item.label.toLowerCase()}`}
+                    className={`flex items-center space-x-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
                       activeDropdown === item.label 
                         ? (scrolled ? 'text-[#FF6B00] bg-gray-100' : 'text-[#FF6B00] bg-white/5')
                         : (scrolled ? 'text-gray-600 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
@@ -147,7 +150,7 @@ export default function Header() {
                   <Link
                     id={`nav-link-${item.label.toLowerCase()}`}
                     href={item.href || '#'}
-                    className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
                       pathname === item.href 
                         ? (scrolled ? 'text-[#FF6B00] bg-gray-100' : 'text-[#FF6B00] bg-white/5')
                         : (scrolled ? 'text-gray-600 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
@@ -177,7 +180,7 @@ export default function Header() {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className={`flex items-start p-3 rounded-lg transition-colors group/item ${
+                            className={`flex items-start p-3 rounded-lg transition-colors group/item focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none ${
                               scrolled ? 'hover:bg-gray-50' : 'hover:bg-white/5'
                             }`}
                           >
@@ -215,7 +218,8 @@ export default function Header() {
               href="https://wa.me/923006392025" 
               target="_blank" 
               rel="noopener noreferrer"
-              className={`flex items-center space-x-1.5 text-sm font-semibold transition-colors whitespace-nowrap flex-shrink-0 ${
+              aria-label="Contact us on WhatsApp at +92 300 6392025"
+              className={`flex items-center space-x-1.5 text-sm font-semibold transition-colors whitespace-nowrap flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none rounded-lg ${
                 scrolled ? 'text-gray-700 hover:text-[#FF6B00]' : 'text-gray-300 hover:text-[#FF6B00]'
               }`}
             >
@@ -225,7 +229,7 @@ export default function Header() {
             <Link 
               id="header-demo-btn"
               href="/contact?demo=true" 
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-xl ${
+              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-xl focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
                 scrolled
                   ? 'bg-[#1C1C1C] hover:bg-black text-white shadow-black/10'
                   : 'bg-[#FF6B00] hover:bg-[#FF8C39] text-white shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30'
@@ -242,7 +246,8 @@ export default function Header() {
               href="https://wa.me/923006392025" 
               target="_blank" 
               rel="noopener noreferrer"
-              className={`p-2 rounded-xl transition-colors ${
+              aria-label="Contact us on WhatsApp"
+              className={`p-2 rounded-xl transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none ${
                 scrolled ? 'bg-gray-100 text-[#FF6B00] hover:bg-gray-200' : 'bg-white/5 text-[#FF6B00] hover:bg-white/10'
               }`}
             >
@@ -251,10 +256,12 @@ export default function Header() {
             <button
               id="mobile-menu-toggle"
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-xl transition-colors ${
+              aria-expanded={isOpen}
+              aria-controls="mobile-drawer"
+              aria-label={isOpen ? "Close main navigation menu" : "Open main navigation menu"}
+              className={`p-2 rounded-xl transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none ${
                 scrolled ? 'bg-gray-100 text-gray-700 hover:text-black hover:bg-gray-200' : 'bg-white/5 text-gray-300 hover:text-white hover:bg-white/10'
               }`}
-              aria-label="Toggle Menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -268,6 +275,8 @@ export default function Header() {
         {isOpen && (
           <motion.div
             id="mobile-drawer"
+            role="region"
+            aria-label="Mobile Navigation Menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -282,7 +291,10 @@ export default function Header() {
                       <button
                         id={`mobile-nav-btn-${item.label.toLowerCase()}`}
                         onClick={() => toggleDropdown(item.label)}
-                        className="flex items-center justify-between w-full py-3 text-base font-medium text-white hover:text-[#FF6B00]"
+                        aria-haspopup="true"
+                        aria-expanded={activeDropdown === item.label}
+                        aria-controls={`mobile-dropdown-${item.label.toLowerCase()}`}
+                        className="flex items-center justify-between w-full py-3 text-base font-medium text-white hover:text-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-lg px-2"
                       >
                         <span>{item.label}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
@@ -292,6 +304,7 @@ export default function Header() {
                       <AnimatePresence>
                         {activeDropdown === item.label && (
                           <motion.div 
+                            id={`mobile-dropdown-${item.label.toLowerCase()}`}
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
@@ -301,7 +314,7 @@ export default function Header() {
                               <Link
                                 key={subItem.label}
                                 href={subItem.href}
-                                className="flex items-center py-2 text-sm text-gray-400 hover:text-white"
+                                className="flex items-center py-2 text-sm text-gray-400 hover:text-white focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded px-2"
                               >
                                 <span className="mr-2">{subItem.icon}</span>
                                 <span>{subItem.label}</span>
@@ -315,7 +328,7 @@ export default function Header() {
                     <Link
                       id={`mobile-nav-link-${item.label.toLowerCase()}`}
                       href={item.href || '#'}
-                      className="block py-3 text-base font-medium text-white hover:text-[#FF6B00]"
+                      className="block py-3 text-base font-medium text-white hover:text-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-lg px-2"
                     >
                       {item.label}
                     </Link>
@@ -327,7 +340,7 @@ export default function Header() {
                 <Link 
                   id="mobile-demo-btn"
                   href="/contact?demo=true" 
-                  className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white py-3 px-4 rounded-xl text-center text-sm font-semibold shadow-lg shadow-[#FF6B00]/20 transition-colors"
+                  className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white py-3 px-4 rounded-xl text-center text-sm font-semibold shadow-lg shadow-[#FF6B00]/20 transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none"
                 >
                   Book a Demo
                 </Link>

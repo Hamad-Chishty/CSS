@@ -204,7 +204,7 @@ function ContactPageContent() {
                           value={formData.fullName}
                           onChange={handleChange}
                           placeholder="Zainab Malik"
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         />
                       </div>
                       <div className="space-y-2">
@@ -217,7 +217,7 @@ function ContactPageContent() {
                           value={formData.companyName}
                           onChange={handleChange}
                           placeholder="BakeWay Premium"
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         />
                       </div>
                     </div>
@@ -233,7 +233,7 @@ function ContactPageContent() {
                           value={formData.whatsapp}
                           onChange={handleChange}
                           placeholder="+92 300 6392025"
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         />
                       </div>
                       <div className="space-y-2">
@@ -245,7 +245,7 @@ function ContactPageContent() {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="name@company.com"
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         />
                       </div>
                     </div>
@@ -258,7 +258,7 @@ function ContactPageContent() {
                           name="industry"
                           value={formData.industry}
                           onChange={handleChange}
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         >
                           <option value="restaurant">Restaurant & Cafe</option>
                           <option value="retail">Retail Store</option>
@@ -277,7 +277,7 @@ function ContactPageContent() {
                           name="systemType"
                           value={formData.systemType}
                           onChange={handleChange}
-                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none"
+                          className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none"
                         >
                           <option value="standard-pos">Standard POS License</option>
                           <option value="multi-branch">Multi-Branch Pro License</option>
@@ -299,7 +299,7 @@ function ContactPageContent() {
                         placeholder={isDemoMode 
                           ? "What specific features or hardware integration would you like to see during the screen-share? (e.g. thermal printers, SMS APIs, inventory alerts...)" 
                           : "Outline any special recipe calculations, printer hardware setups, warehouse requirements, or biometric clock syncs you need..."}
-                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] rounded-xl px-4 py-3 text-sm transition-colors outline-none resize-none"
+                        className="w-full bg-white border border-gray-200 focus:border-[#FF6B00] focus:ring-1 focus:ring-[#FF6B00] focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:outline-none rounded-xl px-4 py-3 text-sm transition-colors outline-none resize-none"
                       />
                     </div>
 
@@ -307,7 +307,7 @@ function ContactPageContent() {
                       <button 
                         id="submit-blueprint-btn"
                         type="submit" 
-                        className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all flex items-center justify-center space-x-2"
+                        className="w-full bg-[#FF6B00] hover:bg-[#FF8C39] text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all flex items-center justify-center space-x-2 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none"
                       >
                         <Send className="w-4 h-4" />
                         <span>{isDemoMode ? 'Book My Live Demo Slot' : 'Submit Blueprint Request'}</span>
@@ -362,7 +362,7 @@ function ContactPageContent() {
                       href={`https://wa.me/923006392025?text=Hello,%20I%20have%20submitted%20my%20POS%20blueprint%20for%20${encodeURIComponent(formData.companyName)}.%20My%20name%20is%20${encodeURIComponent(formData.fullName)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-colors inline-flex items-center space-x-2"
+                      className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-colors inline-flex items-center space-x-2 focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:outline-none"
                     >
                       <MessageSquare className="w-5 h-5" />
                       <span>Speed Up via Direct WhatsApp</span>
