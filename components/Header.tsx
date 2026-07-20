@@ -69,9 +69,9 @@ export default function Header() {
     {
       label: 'Solutions',
       children: [
-        { label: 'WhatsApp Business API', description: 'Automated order alerts, billing notifications, & chat bots.', href: '/solutions#whatsapp-integration', icon: <MessageSquare className="w-5 h-5 text-orange-500" /> },
-        { label: 'QR Ordering Solutions', description: 'Contactless dynamic dining order systems for hospitality.', href: '/solutions#qr-ordering', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
-        { label: 'Payment Integrations', description: 'Secure local & global online gateway synchronizations.', href: '/solutions#payment-gateways', icon: <Shield className="w-5 h-5 text-orange-500" /> }
+        { label: 'WhatsApp Business API', description: 'Automated order alerts, billing notifications, & chat bots.', href: '/solutions/whatsapp-business-api', icon: <MessageSquare className="w-5 h-5 text-orange-500" /> },
+        { label: 'QR Ordering Solutions', description: 'Contactless dynamic dining order systems for hospitality.', href: '/solutions/qr-ordering-system', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
+        { label: 'Payment Gateway Integration', description: 'Secure local & global online gateway synchronizations.', href: '/solutions/payment-gateway-integration', icon: <Shield className="w-5 h-5 text-orange-500" /> }
       ]
     },
     { label: 'Industries', href: '/industries' },
