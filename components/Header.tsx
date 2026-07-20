@@ -48,13 +48,12 @@ export default function Header() {
     {
       label: 'Products',
       children: [
-        { label: 'Restaurant POS', href: '/products/restaurant-pos', icon: <UtensilsCrossed className="w-5 h-5 text-orange-500" /> },
-        { label: 'Retail POS', href: '/products/retail-pos', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
+        { label: 'Restaurant & Cafe POS', href: '/products/restaurant-pos', icon: <UtensilsCrossed className="w-5 h-5 text-orange-500" /> },
+        { label: 'Retail & Grocery POS', href: '/products/retail-pos', icon: <ShoppingBag className="w-5 h-5 text-orange-500" /> },
         { label: 'Pharmacy POS', href: '/products/pharmacy-pos', icon: <Pill className="w-5 h-5 text-orange-500" /> },
         { label: 'ERP & Inventory', href: '/products/erp-inventory', icon: <Layers className="w-5 h-5 text-orange-500" /> },
         { label: 'HR & Payroll', href: '/products/hr-payroll', icon: <Briefcase className="w-5 h-5 text-orange-500" /> },
-        { label: 'CRM', href: '/products/crm', icon: <Users className="w-5 h-5 text-orange-500" /> },
-        { label: 'Custom Software', href: '/products/custom-software', icon: <Cpu className="w-5 h-5 text-orange-500" /> },
+        { label: 'CRM & Business Automation', href: '/products/crm', icon: <Users className="w-5 h-5 text-orange-500" /> },
         { label: 'View All Products', href: '/products', icon: <ArrowRight className="w-5 h-5 text-orange-500" /> }
       ]
     },
