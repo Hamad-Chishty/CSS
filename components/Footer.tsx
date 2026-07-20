@@ -36,12 +36,12 @@ export default function Footer() {
     {
       title: 'Solutions & Industries',
       links: [
-        { label: 'WhatsApp Integration', href: '/solutions#whatsapp-integration' },
-        { label: 'QR Ordering Solutions', href: '/solutions#qr-ordering' },
-        { label: 'Payment Integration', href: '/solutions#payment-gateways' },
+        { label: 'WhatsApp Integration', href: '/solutions/whatsapp-business-api' },
+        { label: 'QR Ordering Solutions', href: '/solutions/qr-ordering-system' },
+        { label: 'Payment Integration', href: '/solutions/payment-gateway-integration' },
         { label: 'Education & Medical', href: '/industries' },
         { label: 'Manufacturing & Corp', href: '/industries' },
-        { label: 'Bespoke Automation', href: '/solutions' }
+        { label: 'Bespoke Automation', href: '/services#custom-dev' }
       ]
     },
     {
