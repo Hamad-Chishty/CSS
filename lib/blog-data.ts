@@ -43,9 +43,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 16, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -121,7 +121,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -142,9 +142,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 15, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -211,7 +211,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -232,9 +232,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 14, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -304,7 +304,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -325,9 +325,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 13, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -396,7 +396,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -417,9 +417,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 12, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -489,7 +489,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -510,9 +510,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 11, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -581,7 +581,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -602,9 +602,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 10, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -673,7 +673,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -694,9 +694,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 09, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -765,7 +765,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -786,9 +786,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 08, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -857,7 +857,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -878,9 +878,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 07, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -949,7 +949,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -970,9 +970,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 06, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1051,7 +1051,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1072,9 +1072,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 05, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1148,7 +1148,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1169,9 +1169,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 04, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1249,7 +1249,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1270,9 +1270,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 03, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1350,7 +1350,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1371,9 +1371,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 02, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fa98?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1449,7 +1449,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fa98?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1470,9 +1470,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 01, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1550,7 +1550,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1571,9 +1571,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 30, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1650,7 +1650,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1671,9 +1671,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 29, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1751,7 +1751,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1772,9 +1772,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 28, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1852,7 +1852,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1873,9 +1873,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 27, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -1954,7 +1954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -1975,9 +1975,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 26, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2060,7 +2060,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2081,9 +2081,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 25, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2163,7 +2163,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2184,9 +2184,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 24, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2269,7 +2269,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2290,9 +2290,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 23, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2371,7 +2371,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2392,9 +2392,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 22, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2481,7 +2481,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2502,9 +2502,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 21, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2591,7 +2591,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2612,9 +2612,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 20, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2697,7 +2697,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2718,9 +2718,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 19, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1554224154-71ee1b55726b?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2800,7 +2800,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1554224154-71ee1b55726b?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2821,9 +2821,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 18, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -2904,7 +2904,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -2925,9 +2925,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 17, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3010,7 +3010,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3031,9 +3031,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 16, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3112,7 +3112,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3133,9 +3133,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 15, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3214,7 +3214,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3235,9 +3235,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 14, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3317,7 +3317,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3338,9 +3338,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 13, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3421,7 +3421,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3442,9 +3442,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 12, 2026",
     "readTime": "10 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1601597111158-2fceff270190?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3527,7 +3527,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1601597111158-2fceff270190?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3548,9 +3548,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 11, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3633,7 +3633,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3654,9 +3654,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 10, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3745,7 +3745,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3766,9 +3766,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 09, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3849,7 +3849,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3870,9 +3870,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 08, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -3954,7 +3954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -3975,9 +3975,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 07, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4061,7 +4061,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4082,9 +4082,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 06, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4165,7 +4165,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4186,9 +4186,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 05, 2026",
     "readTime": "16 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4269,7 +4269,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4290,9 +4290,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 04, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4373,7 +4373,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4394,9 +4394,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 03, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4479,7 +4479,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4500,9 +4500,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 02, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1553413719-8758712a59fb?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4581,7 +4581,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1553413719-8758712a59fb?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4602,9 +4602,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "June 01, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4687,7 +4687,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4708,9 +4708,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 31, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4791,7 +4791,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4812,9 +4812,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 30, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -4896,7 +4896,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -4917,9 +4917,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 29, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5007,7 +5007,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5028,9 +5028,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 28, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5112,7 +5112,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5133,9 +5133,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 27, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5214,7 +5214,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5235,9 +5235,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 26, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5321,7 +5321,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5342,9 +5342,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 25, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5425,7 +5425,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5446,9 +5446,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 24, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5530,7 +5530,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5551,9 +5551,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 23, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5645,7 +5645,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5666,9 +5666,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 22, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5747,7 +5747,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5768,9 +5768,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 21, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5859,7 +5859,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5880,9 +5880,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 20, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -5961,7 +5961,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -5982,9 +5982,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 19, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6066,7 +6066,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6087,9 +6087,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 18, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6170,7 +6170,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6191,9 +6191,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 17, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6274,7 +6274,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6295,9 +6295,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 16, 2026",
     "readTime": "14 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1462206092226-f46025ffd827?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6379,7 +6379,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1462206092226-f46025ffd827?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6400,9 +6400,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 15, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1552581230-c015914626ed?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6483,7 +6483,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1552581230-c015914626ed?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6504,9 +6504,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 14, 2026",
     "readTime": "11 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6588,7 +6588,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6609,9 +6609,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 13, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6691,7 +6691,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6712,9 +6712,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 12, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6794,7 +6794,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6815,9 +6815,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 11, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -6898,7 +6898,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -6919,9 +6919,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 10, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7009,7 +7009,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7030,9 +7030,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 09, 2026",
     "readTime": "12 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1543286386-7a39e65e0a68?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7115,7 +7115,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1543286386-7a39e65e0a68?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7136,9 +7136,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 08, 2026",
     "readTime": "13 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7217,7 +7217,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7238,9 +7238,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 07, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7323,7 +7323,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7344,9 +7344,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 06, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7429,7 +7429,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7450,9 +7450,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 05, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7534,7 +7534,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7555,9 +7555,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 04, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7640,7 +7640,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7661,9 +7661,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 03, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7746,7 +7746,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7767,9 +7767,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 02, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1507206130007-be9e706fd3c6?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7852,7 +7852,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1507206130007-be9e706fd3c6?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7873,9 +7873,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "May 01, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -7961,7 +7961,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -7982,9 +7982,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "April 30, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8067,7 +8067,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8088,9 +8088,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "April 29, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1553484771-047a44eee27f?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8168,7 +8168,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1553484771-047a44eee27f?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8189,9 +8189,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "April 28, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8269,7 +8269,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8290,9 +8290,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 17, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8374,7 +8374,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8395,9 +8395,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 18, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8480,7 +8480,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8501,9 +8501,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 19, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8586,7 +8586,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8607,9 +8607,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 20, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8692,7 +8692,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8713,9 +8713,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 21, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8798,7 +8798,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8819,9 +8819,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 22, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -8898,7 +8898,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -8919,9 +8919,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 23, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9003,7 +9003,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9024,9 +9024,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 24, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9111,7 +9111,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9132,9 +9132,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 25, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9217,7 +9217,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9238,9 +9238,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 26, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9327,7 +9327,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9348,9 +9348,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 27, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9433,7 +9433,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9454,9 +9454,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 28, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9539,7 +9539,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9560,9 +9560,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 29, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c12ad?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9649,7 +9649,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1550751827-4bd374c12ad?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9670,9 +9670,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 30, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9754,7 +9754,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9775,9 +9775,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "July 31, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9860,7 +9860,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9881,9 +9881,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 01, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -9968,7 +9968,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -9989,9 +9989,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 02, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -10074,7 +10074,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -10095,9 +10095,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 03, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -10180,7 +10180,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -10201,9 +10201,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 04, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -10286,7 +10286,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",
@@ -10307,9 +10307,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "August 05, 2026",
     "readTime": "15 minutes",
     "author": {
-      "name": "Hamad Chishty",
-      "role": "Founder & CEO",
-      "bio": "An enterprise software architect and systems engineer, Hamad has designed high-availability POS and ERP platforms for multi-branch brands across Pakistan and UAE.",
+      "name": "Chishty Smart Solutions",
+      "role": "Chishty Smart Solutions",
+      "bio": "",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&h=630&q=80",
@@ -10392,7 +10392,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&h=630&q=80",
       "author": {
         "@type": "Person",
-        "name": "Hamad Chishty"
+        "name": "Chishty Smart Solutions"
       },
       "publisher": {
         "@type": "Organization",

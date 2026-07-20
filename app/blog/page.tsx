@@ -9,7 +9,6 @@ import {
   ChevronRight, Sparkles, User, Share2, Search, Tag, Mail, HelpCircle, Check
 } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
-import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -153,20 +152,8 @@ export default function BlogPage() {
                   {featuredPost.desc}
                 </p>
                 <div className="pt-2 flex items-center justify-between border-t border-gray-150">
-                  <div className="flex items-center space-x-3">
-                    <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gray-200">
-                      <Image 
-                        src={featuredPost.author.name.includes("Hamad") ? hamadImage : featuredPost.author.avatar} 
-                        alt={featuredPost.author.name} 
-                        fill
-                        className="object-cover"
-                        sizes="40px"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-gray-800">{featuredPost.author.name}</h4>
-                      <p className="text-[10px] text-[#FF6B00] font-semibold">{featuredPost.author.role}</p>
-                    </div>
+                  <div className="text-xs text-gray-400 font-mono font-semibold">
+                    Published Strategic Blueprint
                   </div>
                   <Link 
                     href={`/blog/${featuredPost.slug}`}
@@ -240,19 +227,7 @@ export default function BlogPage() {
                         </p>
                       </div>
 
-                      <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                          <div className="w-6 h-6 rounded-full overflow-hidden relative border border-gray-200">
-                            <Image 
-                              src={post.author.name.includes("Hamad") ? hamadImage : post.author.avatar} 
-                              alt={post.author.name} 
-                              fill 
-                              className="object-cover" 
-                              sizes="24px"
-                            />
-                          </div>
-                          <span className="text-[10px] font-bold text-gray-700">{post.author.name}</span>
-                        </div>
+                      <div className="pt-4 border-t border-gray-100 flex items-center justify-end">
                         <Link 
                           href={`/blog/${post.slug}`}
                           className="text-xs font-bold text-[#FF6B00] flex items-center group-hover:translate-x-1 transition-transform"
@@ -380,7 +355,7 @@ export default function BlogPage() {
                 <span className="text-[#FF6B00] text-[10px] font-bold uppercase tracking-widest font-mono">Instant Support Channel</span>
                 <h3 className="text-lg font-black leading-tight">Consult with our Systems Strategist</h3>
                 <p className="text-gray-400 text-xs leading-relaxed max-w-xs mx-auto">
-                  Have specific software development, FBR setup, or ERP requirements? Skip the paperwork and message Hamad Chishty directly.
+                  Have specific software development, FBR setup, or ERP requirements? Skip the paperwork and message our team directly on WhatsApp.
                 </p>
               </div>
               <div className="relative z-10 pt-2">

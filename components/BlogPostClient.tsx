@@ -9,7 +9,6 @@ import {
   ChevronRight, ArrowRight, Quote, CheckCircle2, AlertCircle, Sparkles, HelpCircle, ChevronDown
 } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '@/lib/blog-data';
-import hamadImage from '@/src/assets/images/hamad-chishty.jpg';
 
 const PILLARS = [
   {
@@ -407,22 +406,6 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
 
           {/* Author Meta Details */}
           <div className="flex flex-wrap items-center gap-6 pt-4 text-sm border-t border-white/5">
-            <div className="flex items-center space-x-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/10">
-                <Image 
-                  src={post.author.name.includes("Hamad") ? hamadImage : post.author.avatar} 
-                  alt={post.author.name} 
-                  fill
-                  className="object-cover"
-                  sizes="48px"
-                />
-              </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-bold text-white leading-none">{post.author.name}</h4>
-                <p className="text-[10px] sm:text-xs text-[#FF6B00] font-semibold mt-0.5">{post.author.role}</p>
-              </div>
-            </div>
-
             <div className="flex items-center space-x-4 text-xs text-gray-400 font-mono">
               <span className="flex items-center space-x-1.5">
                 <Calendar className="w-4 h-4 text-[#FF6B00]" />
@@ -709,27 +692,6 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
                 ))}
               </div>
             </section>
-
-            {/* Author Portrait Banner Bio */}
-            <div className="border border-gray-150 rounded-4xl p-8 flex flex-col sm:flex-row gap-6 items-center bg-gray-50/50">
-              <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md flex-shrink-0">
-                <Image 
-                  src={post.author.name.includes("Hamad") ? hamadImage : post.author.avatar} 
-                  alt={post.author.name} 
-                  fill 
-                  className="object-cover" 
-                  sizes="96px"
-                />
-              </div>
-              <div className="space-y-2 text-center sm:text-left">
-                <span className="text-[10px] font-bold text-[#FF6B00] uppercase tracking-widest font-mono">Written By Author</span>
-                <h4 className="text-lg font-black text-gray-900">{post.author.name}</h4>
-                <p className="text-xs text-gray-500 font-semibold">{post.author.role}</p>
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-light pt-1">
-                  {post.author.bio}
-                </p>
-              </div>
-            </div>
 
             {/* Article Navigation Footer Prev/Next */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-10 border-t border-gray-150">
