@@ -60,10 +60,10 @@ export default function Header() {
     {
       label: 'Services',
       children: [
-        { label: 'Custom Software Dev', description: 'Tailored high-performance systems for scaling enterprise.', href: '/services#custom-dev', icon: <Cpu className="w-5 h-5 text-orange-500" /> },
-        { label: 'Web & Mobile Apps', description: 'Next-generation web architectures & native iOS/Android apps.', href: '/services#web-mobile', icon: <Rocket className="w-5 h-5 text-orange-500" /> },
-        { label: 'AI Solutions & Automation', description: 'Integrate intelligent LLM models & workflow automation.', href: '/services#ai-solutions', icon: <Sparkles className="w-5 h-5 text-orange-500" /> },
-        { label: 'SEO & Brand Identity', description: 'Dominating search visibility & premium visual styling.', href: '/services#seo-branding', icon: <FileText className="w-5 h-5 text-orange-500" /> }
+        { label: 'Custom Software Development', description: 'Tailored high-performance systems for scaling enterprise.', href: '/services/custom-software-development', icon: <Cpu className="w-5 h-5 text-orange-500" /> },
+        { label: 'Web & Mobile App Development', description: 'Next-generation web architectures & native iOS/Android apps.', href: '/services/web-mobile-app-development', icon: <Rocket className="w-5 h-5 text-orange-500" /> },
+        { label: 'AI & Business Automation', description: 'Integrate intelligent LLM models & workflow automation.', href: '/services/ai-business-automation', icon: <Sparkles className="w-5 h-5 text-orange-500" /> },
+        { label: 'SEO & Brand Marketing', description: 'Dominating search visibility & premium visual styling.', href: '/services/seo-brand-marketing', icon: <FileText className="w-5 h-5 text-orange-500" /> }
       ]
     },
     {

@@ -25,12 +25,10 @@ export default function Footer() {
     {
       title: 'Our Services',
       links: [
-        { label: 'Custom Software', href: '/services#custom-dev' },
-        { label: 'Web Applications', href: '/services#web-mobile' },
-        { label: 'Mobile Applications', href: '/services#web-mobile' },
-        { label: 'AI Solutions', href: '/services#ai-solutions' },
-        { label: 'SEO & Digital Marketing', href: '/services#seo-branding' },
-        { label: 'UI/UX Design', href: '/services#seo-branding' }
+        { label: 'Custom Software Development', href: '/services/custom-software-development' },
+        { label: 'Web & Mobile App Development', href: '/services/web-mobile-app-development' },
+        { label: 'AI & Business Automation', href: '/services/ai-business-automation' },
+        { label: 'SEO & Brand Marketing', href: '/services/seo-brand-marketing' }
       ]
     },
     {
@@ -41,7 +39,7 @@ export default function Footer() {
         { label: 'Payment Integration', href: '/solutions/payment-gateway-integration' },
         { label: 'Education & Medical', href: '/industries' },
         { label: 'Manufacturing & Corp', href: '/industries' },
-        { label: 'Bespoke Automation', href: '/services#custom-dev' }
+        { label: 'Bespoke Automation', href: '/services/custom-software-development' }
       ]
     },
     {
