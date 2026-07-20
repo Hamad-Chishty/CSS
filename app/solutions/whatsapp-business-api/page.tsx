@@ -714,7 +714,7 @@ export default function WhatsAppBusinessAPIPage() {
             </Link>
 
             <Link
-              href="/solutions/payment-gateway-integration"
+              href="/solutions/payment-gateway"
               className="bg-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-all flex flex-col justify-between group"
             >
               <div className="space-y-4">
