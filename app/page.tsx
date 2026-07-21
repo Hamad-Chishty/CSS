@@ -6,7 +6,8 @@ import { motion } from 'motion/react';
 import { 
   ArrowRight, MessageSquare, Shield, CheckCircle2, Cpu, Sparkles, 
   ChevronRight, Users, BarChart3, Database, Layers, 
-  Smartphone, Zap, UtensilsCrossed, ShoppingBag, Pill, Briefcase
+  Smartphone, Zap, UtensilsCrossed, ShoppingBag, Pill, Briefcase,
+  Check
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -91,15 +92,19 @@ export default function HomePage() {
             >
               <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold text-[#FF6B00] uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-                <span>Next-Gen Enterprise Architectures</span>
+                <span>Founder-Led Development</span>
               </div>
               
               <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-none">
-                Standardize Your Business With <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B00] to-[#FF8C39]">World-Class POS</span> & Custom Software
+                Smart Technology & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B00] to-[#FF8C39]">Digital Solutions</span> Built Around Your Business
               </h1>
               
               <p className="text-gray-300 text-base sm:text-lg font-normal leading-relaxed max-w-2xl">
-                Empower your restaurant, retail outlet, pharmacy, or enterprise with high-performance billing systems, advanced real-time inventory management, custom web apps, and automated digital ecosystems. Designed by Chishty Smart Solutions.
+                Chishty Smart Solutions builds practical POS systems, business software, custom applications, automation solutions, websites, digital growth strategies, and creative solutions designed around real business requirements.
+              </p>
+
+              <p className="text-gray-400 text-sm font-normal leading-relaxed max-w-2xl border-l-2 border-[#FF6B00]/40 pl-4">
+                From business software and custom development to SEO, digital marketing, and professional design — we help businesses use technology and digital solutions more effectively.
               </p>
               
               {/* Actions */}
@@ -107,10 +112,10 @@ export default function HomePage() {
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="shrink-0">
                   <Link 
                     id="hero-demo-cta"
-                    href="/contact?demo=true" 
+                    href="/contact" 
                     className="bg-[#FF6B00] hover:bg-[#FF8C39] text-white px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all text-center flex items-center justify-center space-x-2 w-full sm:w-auto"
                   >
-                    <span>Request Live Demo</span>
+                    <span>Start a Project</span>
                     <ArrowRight className="w-5 h-5" />
                   </Link>
                 </motion.div>
@@ -124,25 +129,14 @@ export default function HomePage() {
                     className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white px-8 py-4 rounded-xl text-base font-bold transition-all text-center flex items-center justify-center space-x-2 w-full sm:w-auto"
                   >
                     <MessageSquare className="w-5 h-5 text-[#FF6B00]" />
-                    <span>Consult via WhatsApp</span>
+                    <span>Talk to Us on WhatsApp</span>
                   </a>
                 </motion.div>
               </div>
 
-              {/* Badges */}
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-4 text-xs text-gray-400 border-t border-white/5" id="hero-trust-badges">
-                <span className="flex items-center space-x-1.5">
-                  <Shield className="w-4 h-4 text-emerald-500" />
-                  <span>Licensed Enterprise Systems</span>
-                </span>
-                <span className="flex items-center space-x-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#FF6B00]" />
-                  <span>Local & Cloud Backup Redundancy</span>
-                </span>
-                <span className="flex items-center space-x-1.5">
-                  <Users className="w-4 h-4 text-orange-500" />
-                  <span>Free Staff Training Included</span>
-                </span>
+              {/* Credibility Line */}
+              <div className="pt-4 text-xs text-gray-400 border-t border-white/5 font-semibold tracking-wide" id="hero-trust-badges">
+                Founder-led development • Custom solutions • Direct communication
               </div>
             </motion.div>
 
@@ -167,7 +161,7 @@ export default function HomePage() {
                   className="absolute top-12 -left-6 bg-[#121212]/95 border border-white/10 p-3 rounded-xl shadow-2xl z-20 flex items-center space-x-2 max-w-[180px] pointer-events-none"
                 >
                   <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                  <span className="text-[10px] font-mono text-gray-300">Sync: 14 Nodes</span>
+                  <span className="text-[10px] font-mono text-gray-300">Sync: Local Engine</span>
                 </motion.div>
 
                 <motion.div
@@ -176,7 +170,7 @@ export default function HomePage() {
                   className="absolute bottom-16 -right-6 bg-[#121212]/95 border border-white/10 p-3 rounded-xl shadow-2xl z-20 flex items-center space-x-2 max-w-[200px] pointer-events-none"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-[#FF6B00]" />
-                  <span className="text-[10px] font-mono text-gray-300">Offline SQLite: Connected</span>
+                  <span className="text-[10px] font-mono text-gray-300">Offline SQLite: Ready</span>
                 </motion.div>
 
                 <div className="w-full h-full bg-[#121212]/80 backdrop-blur-md rounded-[22px] p-6 flex flex-col justify-between text-white">
@@ -190,7 +184,7 @@ export default function HomePage() {
                       <span className="ml-2 bg-white/5 border border-white/10 rounded px-2.5 py-0.5 text-[9px] text-gray-400 font-mono">chishtysmartsolutions.com</span>
                     </div>
                     <span className="text-[9px] bg-[#FF6B00]/10 text-[#FF6B00] border border-[#FF6B00]/20 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider animate-pulse">
-                      Live Sales Feed
+                      POS Software Preview
                     </span>
                   </div>
 
@@ -198,7 +192,7 @@ export default function HomePage() {
                   <div className="my-6 space-y-4">
                     <div className="flex items-baseline justify-between">
                       <div>
-                        <span className="text-[10px] text-gray-400 block font-semibold uppercase tracking-wider font-mono">Total Revenue (Daily)</span>
+                        <span className="text-[10px] text-gray-400 block font-semibold uppercase tracking-wider font-mono">Daily Sales Mockup</span>
                         <span className="text-2xl sm:text-3xl font-black font-mono text-white">
                           PKR {salesCounter.toLocaleString()}
                         </span>
@@ -223,14 +217,14 @@ export default function HomePage() {
                   {/* Interactive Status List */}
                   <div className="space-y-2 border-t border-white/5 pt-4">
                     <div className="flex items-center justify-between text-xs font-medium text-gray-400">
-                      <span>Sync Server Status</span>
+                      <span>Database Sync</span>
                       <span className="text-emerald-400 font-bold flex items-center gap-1.5 font-mono">
-                        <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping"></span> SECURE-SSL
+                        <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping"></span> OPERATIONAL
                       </span>
                     </div>
                     <div className="flex items-center justify-between text-xs font-medium text-gray-400">
-                      <span>Active Terminals</span>
-                      <span className="text-[#FF6B00] font-mono font-bold">100% SLA STABLE</span>
+                      <span>Offline Caching</span>
+                      <span className="text-[#FF6B00] font-mono font-bold">ACTIVE</span>
                     </div>
                   </div>
 
@@ -242,70 +236,262 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. TRUSTED BY LOGOS PLACEHOLDER */}
-      <section id="trusted-by" className="py-12 bg-white border-b border-gray-100">
+      {/* 2. CLEAR ABOUT WHAT WE DO (TRUST STRATEGY) */}
+      <section id="clear-what-we-do" className="py-16 bg-gray-50/50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4">
-            <div className="inline-flex items-center space-x-2 bg-gray-50 border border-gray-150 px-3 py-1 rounded-full text-xs font-semibold text-gray-500 uppercase tracking-widest font-mono">
-              <span>NDA Compliance Shield</span>
-            </div>
-            <p className="text-center text-xs font-bold text-gray-400 uppercase tracking-widest">
-              Client Privacy Shield
-            </p>
-            <p className="text-gray-500 text-xs leading-relaxed max-w-xl mx-auto">
-              Our active restaurant, pharmacy, and retail deployments are protected under NDA compliance protocols. Client references, verified brand case studies, and live terminal demonstrations can be provided on request to qualified directors.
-            </p>
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
+              Our Principles
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+              Clear About What We Do
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                title: "Real Software Development",
+                desc: "We build practical software and technology solutions around real business requirements."
+              },
+              {
+                title: "Direct Communication",
+                desc: "Discuss your requirements directly and get clear communication throughout the project."
+              },
+              {
+                title: "Transparent Scope",
+                desc: "We define requirements, features, and project scope before development so expectations are clear."
+              }
+            ].map((pt, idx) => (
+              <div key={idx} className="bg-white border border-gray-150 rounded-2xl p-6 text-center space-y-3 shadow-sm hover:border-[#FF6B00]/20 transition-all">
+                <div className="w-10 h-10 rounded-full bg-[#FF6B00]/10 text-[#FF6B00] flex items-center justify-center mx-auto text-base font-bold font-mono">
+                  0{idx + 1}
+                </div>
+                <h3 className="font-bold text-gray-900 text-base">{pt.title}</h3>
+                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">{pt.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 3. WHY CHOOSE US */}
-      <section id="why-choose-us" className="py-24 bg-gray-50/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              Our Edge
+      {/* 3. WHY WORK WITH CHISHTY SMART SOLUTIONS */}
+      <section id="why-us" className="py-24 bg-white relative overflow-hidden border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header */}
+          <div className="text-center max-w-4xl mx-auto mb-20 space-y-4">
+            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
+              <Sparkles className="w-3 h-3 animate-pulse" />
+              <span>Our Value</span>
             </span>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-              Why Leaders Choose Chishty
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+              Why Work With Chishty Smart Solutions?
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              We do not just sell licenses. We engineer custom performance backbones that standardize operations, eliminate waste, and secure absolute business reliability.
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+              From powerful POS systems to custom software, automation, integrations, and digital growth — we build technology around the way your business actually works.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Premium Comparison Grid Container */}
+          <div className="mb-20 max-w-5xl mx-auto">
+            {/* Horizontal Scroll Prompt for Mobile */}
+            <div className="flex md:hidden items-center justify-end space-x-1 mb-3 text-xs text-gray-400 font-mono">
+              <span>Swipe left to view full comparison</span>
+              <ArrowRight className="w-3 h-3" />
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-gray-150 shadow-xl shadow-gray-100/50 bg-white">
+              <table className="w-full min-w-[768px] border-collapse text-left">
+                <thead>
+                  <tr className="border-b border-gray-200 bg-gray-50/70">
+                    <th className="py-6 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider w-2/5">Capability</th>
+                    <th className="py-6 px-6 text-sm font-bold text-center text-gray-900 uppercase tracking-wider relative bg-orange-50/30 w-3/10">
+                      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FF6B00] text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase tracking-widest shadow-md flex items-center gap-1">
+                        <Sparkles className="w-2.5 h-2.5" />
+                        <span>Our Advantage</span>
+                      </div>
+                      <span className="text-[#FF6B00] font-black tracking-tight">Chishty Smart Solutions</span>
+                    </th>
+                    <th className="py-6 px-6 text-sm font-bold text-center text-gray-400 uppercase tracking-wider w-3/10">Traditional POS Providers</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {[
+                    {
+                      cap: "Restaurant POS",
+                      sub: "Table billing, digital kitchen screens, and contactless QR menus.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Limited", color: "amber" }
+                    },
+                    {
+                      cap: "Retail & Grocery POS",
+                      sub: "Fast checkouts, barcode scanning, and multi-warehouse stock sync.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Limited", color: "amber" }
+                    },
+                    {
+                      cap: "Custom Software Development",
+                      sub: "Tailored software built exactly for your operational workflows.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "Web & Mobile Applications",
+                      sub: "Next-gen web systems and native iOS/Android applications.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "AI & Business Automation",
+                      sub: "Intelligent AI workflows and automated business operations.",
+                      chishty: { type: "badge", text: "Available on Request", color: "blue" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "WhatsApp Business Solutions",
+                      sub: "Automated billing notifications, reminders, and chatbot integrations.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "QR Ordering Solutions",
+                      sub: "Contactless scanning, digital orders, and custom menus.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Limited", color: "amber" }
+                    },
+                    {
+                      cap: "Payment Integrations",
+                      sub: "Local and global online payment gateway setups (Stripe, etc.).",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Limited", color: "amber" }
+                    },
+                    {
+                      cap: "Multi-Branch Management",
+                      sub: "Real-time sync across branches, centralized ledgers, and reporting.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Limited", color: "amber" }
+                    },
+                    {
+                      cap: "Custom Business Workflows",
+                      sub: "Automated systems configured to support your unique team rules.",
+                      chishty: { type: "badge", text: "Available on Request", color: "blue" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "SEO & Digital Marketing",
+                      sub: "Search engine optimization, traffic growth, and brand visibility.",
+                      chishty: { type: "badge", text: "Available on Request", color: "blue" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    },
+                    {
+                      cap: "Complete Technology Partnership",
+                      sub: "Long-term dedicated engineering SLA, support, and planning.",
+                      chishty: { type: "check", label: "" },
+                      trad: { type: "badge", text: "Unavailable", color: "gray" }
+                    }
+                  ].map((row, idx) => (
+                    <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
+                      <td className="py-5 px-6">
+                        <div className="text-sm font-bold text-gray-900">{row.cap}</div>
+                        <div className="text-xs text-gray-500 mt-1">{row.sub}</div>
+                      </td>
+                      <td className="py-5 px-6 text-center bg-orange-50/10 border-x border-orange-100/50">
+                        {row.chishty.type === "check" ? (
+                          <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#FF6B00]/10 border border-[#FF6B00]/20 text-[#FF6B00]">
+                            <Check className="w-4 h-4" />
+                          </div>
+                        ) : (
+                          <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${
+                             row.chishty.color === "blue" 
+                               ? "bg-blue-50 text-blue-700 border border-blue-150" 
+                               : "bg-indigo-50 text-indigo-700 border border-indigo-150"
+                          }`}>
+                            {row.chishty.text}
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-5 px-6 text-center text-gray-500">
+                        {row.trad.type === "check" ? (
+                          <Check className="w-4 h-4 text-gray-400 inline-block" />
+                        ) : row.trad.type === "badge" ? (
+                          <span className={`px-2.5 py-1 text-xs font-semibold rounded-full inline-block ${
+                            row.trad.color === "amber"
+                              ? "bg-amber-50 text-amber-700 border border-amber-150"
+                              : "bg-gray-100 text-gray-400 border border-gray-150"
+                          }`}>
+                            {row.trad.text}
+                          </span>
+                        ) : (
+                          <span className="text-gray-300 font-bold">—</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 4 Premium Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto mb-16">
             {[
               {
-                icon: <Zap className="w-6 h-6 text-[#FF6B00]" />,
-                title: "Offline-First Resilience",
-                desc: "No internet, no downtime. All billing, receipts, and logs are kept secure on your local database nodes and synced smoothly when back online."
+                icon: <MessageSquare className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Direct Communication",
+                desc: "Work directly with the people involved in understanding and building your solution, without unnecessary layers between you and the development process."
               },
               {
                 icon: <Cpu className="w-6 h-6 text-[#FF6B00]" />,
-                title: "Hardware Compatible Sync",
-                desc: "Plugs seamlessly into barcode scales, cash drawers, biometric scanners, touch terminals, and local KDS screens."
+                title: "Built Around Your Requirements",
+                desc: "Every business works differently. We focus on understanding your workflow, goals, and requirements before deciding how your solution should work."
               },
               {
-                icon: <Users className="w-6 h-6 text-[#FF6B00]" />,
-                title: "Full On-Site Training",
-                desc: "We physically train your branch managers, cashier teams, and supervisors. Complete legacy inventory migration is handled for you."
+                icon: <Layers className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Technology + Digital Expertise",
+                desc: "From software development and automation to SEO, digital marketing, and creative design, we bring multiple digital capabilities together under one technology partner."
               },
               {
-                icon: <Shield className="w-6 h-6 text-[#FF6B00]" />,
-                title: "Strict SLA Guarantee",
-                desc: "Enterprise-grade uptime SLA, chronological operation logs, double-entry audit trials, and 24/7 dedicated support priority."
+                icon: <Sparkles className="w-6 h-6 text-[#FF6B00]" />,
+                title: "Long-Term Support",
+                desc: "Software and digital solutions evolve over time. We can continue to provide improvements, maintenance, updates, marketing support, and technical assistance based on your requirements."
               }
             ].map((item, idx) => (
-              <div key={idx} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="p-3 bg-[#FF6B00]/5 rounded-xl w-12 h-12 flex items-center justify-center mb-5 border border-[#FF6B00]/10">
+              <div 
+                key={idx} 
+                className="bg-white border border-gray-150 rounded-[20px] p-6 shadow-sm hover:shadow-xl hover:border-[#FF6B00]/20 transition-all group duration-300"
+              >
+                <div className="p-3 bg-[#FF6B00]/5 rounded-xl w-12 h-12 flex items-center justify-center mb-6 border border-[#FF6B00]/10 group-hover:scale-105 transition-transform">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-base font-bold text-gray-900 mb-3 group-hover:text-[#FF6B00] transition-colors">{item.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+            <Link 
+              id="why-us-start-project-btn"
+              href="/contact" 
+              className="bg-[#FF6B00] hover:bg-[#FF8C39] text-white px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-[#FF6B00]/10 hover:shadow-[#FF6B00]/20 transition-all text-center flex items-center justify-center space-x-2 w-full sm:w-auto"
+            >
+              <span>Start a Project</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            
+            <a 
+              id="why-us-wa-btn"
+              href="https://wa.me/923006392025" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-900 px-8 py-4 rounded-xl text-base font-bold transition-all text-center flex items-center justify-center space-x-2 w-full sm:w-auto"
+            >
+              <MessageSquare className="w-5 h-5 text-[#FF6B00]" />
+              <span>Talk to Us on WhatsApp</span>
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -533,105 +719,149 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. PRICING */}
+      {/* 8. PRICING INQUIRY */}
       <section id="pricing-section" className="py-24 bg-gray-50/50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              Pricing Options
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-              SLA-Tiered Business Plans
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Flexible options crafted to fit standard business branches and large corporate franchises.
-            </p>
-          </div>
+          <div className="bg-white border border-gray-150 rounded-3xl p-8 sm:p-12 max-w-4xl mx-auto shadow-sm text-center space-y-8">
+            <div className="space-y-4">
+              <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3.5 py-1.5 rounded-full inline-block">
+                Pricing Options
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+                Let&apos;s Find the Right Solution for Your Business
+              </h2>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                We believe in transparent, inquiry-based pricing. Tell us what you need, and we will provide a clear, detailed cost estimate based on your specific requirements.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                title: "Starter (POS Basic)",
-                desc: "Ideal for local bakeries, standard retail kiosks, and cafes.",
-                price: "Custom Quote",
-                features: ["Dual-Engine local billing", "Basic barcode support", "Standard local SQLite database", "Email receipts module", "On-site setup & training"]
-              },
-              {
-                title: "Growth (POS + Stock)",
-                desc: "Perfect for expanding outlets requiring deep stock tracing.",
-                price: "Custom Quote",
-                popular: true,
-                features: ["Everything in Starter", "Multi-branch cloud database", "Expiry warning matrices", "Min stock replenishment alerts", "Supplier account sheets", "Priority SLA hotline"]
-              },
-              {
-                title: "Enterprise (Custom ERP)",
-                desc: "Comprehensive database solutions for corporate franchises.",
-                price: "Custom Quote",
-                features: ["Everything in Growth", "Double-entry accounting maps", "Bespoke ledger automation", "Biometric attendance sync", "Custom WhatsApp gateway", "24/7 dedicated local engineer"]
-              }
-            ].map((plan, idx) => (
-              <div 
-                key={idx} 
-                className={`bg-white border rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow relative ${
-                  plan.popular ? 'border-[#FF6B00] ring-2 ring-[#FF6B00]/10' : 'border-gray-150'
-                }`}
-              >
-                {plan.popular && (
-                  <span className="absolute top-0 right-6 -translate-y-1/2 bg-[#FF6B00] text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                    Most Popular
-                  </span>
-                )}
-                <div>
-                  <h3 className="text-lg font-black text-gray-950">{plan.title}</h3>
-                  <p className="text-gray-500 text-xs mt-2 min-h-[32px]">{plan.desc}</p>
-                  <div className="my-5 border-y border-gray-100 py-3">
-                    <span className="text-2xl font-black text-gray-900">{plan.price}</span>
-                  </div>
-                  <ul className="space-y-2.5">
-                    {plan.features.map((feat, fidx) => (
-                      <li key={fidx} className="flex items-start text-xs font-medium text-gray-600">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mr-2 mt-0.5" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="pt-6 mt-6 border-t border-gray-100">
-                  <Link 
-                    href="/pricing"
-                    className={`block w-full text-center text-xs sm:text-sm font-bold py-3 rounded-xl transition-colors ${
-                      plan.popular 
-                        ? 'bg-[#FF6B00] text-white hover:bg-[#FF8C39]' 
-                        : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-                    }`}
-                  >
-                    View Pricing Details
-                  </Link>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto py-4 border-y border-gray-100">
+              <div className="text-center">
+                <span className="text-xs font-bold text-gray-400 block uppercase tracking-wider mb-1">Step 1</span>
+                <span className="text-sm font-bold text-gray-900">Discuss Requirements</span>
               </div>
-            ))}
+              <div className="text-center">
+                <span className="text-xs font-bold text-gray-400 block uppercase tracking-wider mb-1">Step 2</span>
+                <span className="text-sm font-bold text-gray-900">Get Custom Estimate</span>
+              </div>
+              <div className="text-center">
+                <span className="text-xs font-bold text-gray-400 block uppercase tracking-wider mb-1">Step 3</span>
+                <span className="text-sm font-bold text-gray-900">Development Begins</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
+              <Link
+                id="pricing-inquire-btn"
+                href="/contact"
+                className="bg-[#FF6B00] hover:bg-[#FF8C39] text-white px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all w-full sm:w-auto"
+              >
+                Inquire About Pricing & Solutions
+              </Link>
+              <a
+                id="pricing-wa-btn"
+                href="https://wa.me/923006392025"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-900 px-8 py-4 rounded-xl text-base font-bold transition-all flex items-center justify-center space-x-2 w-full sm:w-auto shadow-sm"
+              >
+                <MessageSquare className="w-5 h-5 text-[#FF6B00]" />
+                <span>Discuss Project on WhatsApp</span>
+              </a>
+            </div>
+            
+            <p className="text-xs text-gray-400">
+              No hidden fees • Free discovery consultation • Clear scope defined upfront
+            </p>
           </div>
         </div>
       </section>
 
-      {/* 9. CLIENT TESTIMONIALS PLACEHOLDER */}
-      <section id="testimonials-section" className="py-24 bg-white">
+      {/* 9. BUILT WITH A HANDS-ON APPROACH (FOUNDER INTRO) */}
+      <section id="founder-section" className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-50 border border-gray-150 rounded-3xl p-8 sm:p-12 text-center space-y-6 max-w-4xl mx-auto shadow-sm">
-            <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3 py-1 rounded-full">
-              Client Feedback
-            </span>
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              Operator Verification
-            </h2>
-            <div className="py-4 border-y border-gray-100/80 my-4">
-              <span className="text-base font-bold text-gray-400 uppercase tracking-widest font-mono block">
-                Verified Client Endorsements
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-5xl mx-auto">
+            
+            {/* Left side text detail */}
+            <div className="lg:col-span-7 space-y-6" id="founder-details">
+              <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3.5 py-1.5 rounded-full inline-block">
+                About the Founder
               </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                Built With a Hands-On Approach
+              </h2>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                Direct engagement, expert engineering, and long-term commitment from our founder.
+              </p>
+              
+              <div className="text-gray-600 text-sm sm:text-base leading-relaxed space-y-4">
+                <p>
+                  Muhammad Talha Chishty, founder and lead developer at Chishty Smart Solutions, oversees every single project personally.
+                </p>
+                <p>
+                  With a hands-on approach to software development, UI/UX design, SEO strategy, and direct client communication, Talha ensures your business gets a practical, functional system built to the highest standard.
+                </p>
+              </div>
+
+              <div className="space-y-3 pt-2" id="founder-core-values">
+                {[
+                  {
+                    title: "No Intermediate Layers",
+                    desc: "You speak directly to the person designing and writing your software. No miscommunications or translation issues through salespeople."
+                  },
+                  {
+                    title: "Custom-Tailored Code",
+                    desc: "We don't deploy cookie-cutter software. Your systems are designed and optimized for your specific operational workflows."
+                  },
+                  {
+                    title: "Long-Term Support",
+                    desc: "We commit to supporting your system as your business grows, providing direct assistance whenever you need updates or help."
+                  }
+                ].map((val, idx) => (
+                  <div key={idx} className="flex items-start">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mr-3 mt-0.5" />
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-900">{val.title}</h4>
+                      <p className="text-xs sm:text-sm text-gray-500 mt-0.5">{val.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">
-              Testimonials, reviews, and operator satisfaction scores undergo verified legal audits to guarantee absolute truthfulness without mock fabrication. Verified supervisor references can be supplied on demand for large commercial integrations.
-            </p>
+
+            {/* Right side graphical bio card */}
+            <div className="lg:col-span-5" id="founder-card-col">
+              <div className="bg-gray-50 border border-gray-150 rounded-3xl p-8 relative overflow-hidden shadow-sm">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FF6B00]/5 rounded-full blur-2xl"></div>
+                <div className="space-y-6 relative z-10">
+                  <div className="w-16 h-16 rounded-full bg-[#FF6B00]/10 flex items-center justify-center border border-[#FF6B00]/20 text-[#FF6B00] text-xl font-bold font-mono">
+                    MTC
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Muhammad Talha Chishty</h3>
+                    <p className="text-xs font-semibold text-[#FF6B00] uppercase tracking-widest mt-1">Founder & Lead Engineer</p>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 space-y-2 text-xs sm:text-sm text-gray-600 font-mono">
+                    <div>• Location: Multan, Pakistan</div>
+                    <div>• Specialties: Software, SEO & Design</div>
+                    <div>• Commitment: Directly hands-on</div>
+                  </div>
+                  <div className="pt-2">
+                    <a
+                      id="founder-wa-direct"
+                      href="https://wa.me/923006392025"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-xs sm:text-sm font-bold text-[#FF6B00] hover:text-[#FF8C39] transition-colors"
+                    >
+                      <span>Connect Directly on WhatsApp</span>
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -645,7 +875,7 @@ export default function HomePage() {
               System Answers
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
-              Frequently Asked Support FAQ
+              Frequently Asked Questions
             </h2>
           </div>
 
@@ -692,18 +922,18 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[#FF6B00]/5 pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight max-w-3xl mx-auto">
-            Ready to Standardize Your Operations to an International Level?
+            Ready to Start Your Next Project?
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto font-normal">
-            Discuss your system blueprints with our Senior Frontend Architect and Creative Director. Standardize your retail network, cafe billing system, or custom enterprise CRM.
+            Discuss your requirements directly with our founder. Whether you need custom software, automation, design, digital marketing, or a practical POS system, we are here to help.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
               id="final-cta-demo-btn"
-              href="/contact?demo=true"
+              href="/contact"
               className="bg-[#FF6B00] hover:bg-[#FF8C39] text-white px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/30 transition-all w-full sm:w-auto"
             >
-              Schedule Platform Demo
+              Start a Project
             </Link>
             <a
               id="final-cta-wa-btn"
@@ -713,11 +943,11 @@ export default function HomePage() {
               className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl text-base font-bold transition-all flex items-center justify-center space-x-2 w-full sm:w-auto"
             >
               <MessageSquare className="w-5 h-5 text-[#FF6B00]" />
-              <span>Discuss via WhatsApp</span>
+              <span>Talk to Us on WhatsApp</span>
             </a>
           </div>
           <p className="text-xs text-gray-500 font-medium">
-            No obligation. Free blueprint architecture analysis. WhatsApp response time &lt; 5 minutes.
+            No obligation • Free discovery consultation • Direct founder communication
           </p>
         </div>
       </section>

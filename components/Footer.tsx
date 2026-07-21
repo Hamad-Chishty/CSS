@@ -46,6 +46,7 @@ export default function Footer() {
       title: 'Company',
       links: [
         { label: 'About Chishty', href: '/about' },
+        { label: 'Why Choose Us', href: '/#why-us' },
         { label: 'Case Studies', href: '/case-studies' },
         { label: 'Pricing Plans', href: '/pricing' },
         { label: 'Read Our Blog', href: '/blog' },

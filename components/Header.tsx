@@ -74,6 +74,7 @@ export default function Header() {
         { label: 'Payment Gateway Integration', description: 'Secure local & global online gateway synchronizations.', href: '/solutions/payment-gateway', icon: <Shield className="w-5 h-5 text-orange-500" /> }
       ]
     },
+    { label: 'Why Us', href: '/#why-us' },
     { label: 'Industries', href: '/industries' },
     { label: 'Features', href: '/features' },
     { label: 'Pricing', href: '/pricing' },
@@ -103,19 +104,14 @@ export default function Header() {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2.5 group flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none rounded-xl" id="header-logo-link" aria-label="Chishty Smart Solutions Homepage">
-            <span className="w-10 h-10 bg-gradient-to-tr from-[#FF6B00] to-[#FF8C39] rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-[#FF6B00]/20 transition-transform duration-300 group-hover:scale-105">
-              C
-            </span>
+          <Link href="/" className="flex items-center group flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none rounded-xl" id="header-logo-link" aria-label="Chishty Smart Solutions Homepage">
             <div className="flex flex-col flex-shrink-0">
-              <span className={`font-black text-xl tracking-tight leading-none transition-colors ${
-                scrolled ? 'text-[#1C1C1C] group-hover:text-[#FF6B00]' : 'text-white group-hover:text-[#FF6B00]'
+              <span className={`font-black text-lg sm:text-xl tracking-tight leading-none transition-colors whitespace-nowrap ${
+                scrolled ? 'text-[#FF6B00] group-hover:text-[#1C1C1C]' : 'text-[#FF6B00] group-hover:text-white'
               }`}>
                 CHISHTY
               </span>
-              <span className={`text-[10px] font-extrabold tracking-[0.25em] uppercase transition-colors mt-0.5 ${
-                scrolled ? 'text-gray-500' : 'text-gray-400'
-              }`}>
+              <span className="text-[9px] sm:text-[10px] font-extrabold tracking-[0.2em] sm:tracking-[0.25em] uppercase transition-colors mt-1 whitespace-nowrap text-gray-500">
                 Smart Solutions
               </span>
             </div>

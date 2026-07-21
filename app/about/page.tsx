@@ -49,10 +49,16 @@ export default function AboutPage() {
 
   const executiveTeam = [
     {
-      name: 'Hamad Chishty',
-      role: 'Founder & CEO',
+      name: 'Muhammad Talha Chishty',
+      role: 'Founder & Lead Engineer',
       image: hamadImage,
-      bio: 'Directs the overall business architecture, core technology visions, and customer success strategies to scale enterprise organizations internationally.'
+      bio: 'Directs overall business solutions, custom software engineering, SEO strategy, and frontend architecture with a dedicated, hands-on development approach.'
+    },
+    {
+      name: 'Hamad Chishty',
+      role: 'Co-Founder & CEO',
+      image: hamadImage,
+      bio: 'Directs the business development and customer success strategies to ensure reliable service delivery and long-term client partnerships.'
     }
   ];
 
