@@ -118,7 +118,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1" id="desktop-nav">
+          <nav className="hidden lg:flex items-center lg:space-x-0.5 xl:space-x-1" id="desktop-nav">
             {navItems.map((item) => (
               <div 
                 key={item.label} 
@@ -132,10 +132,10 @@ export default function Header() {
                     aria-haspopup="true"
                     aria-expanded={activeDropdown === item.label}
                     aria-controls={`dropdown-menu-${item.label.toLowerCase()}`}
-                    className={`flex items-center space-x-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
+                    className={`flex items-center space-x-1 lg:px-2.5 xl:px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
                       activeDropdown === item.label 
                         ? (scrolled ? 'text-[#FF6B00] bg-gray-100' : 'text-[#FF6B00] bg-white/5')
-                        : (scrolled ? 'text-gray-600 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
+                        : (scrolled ? 'text-gray-800 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
                     }`}
                   >
                     <span>{item.label}</span>
@@ -147,10 +147,10 @@ export default function Header() {
                   <Link
                     id={`nav-link-${item.label.toLowerCase()}`}
                     href={item.href || '#'}
-                    className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
+                    className={`block lg:px-2.5 xl:px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none ${
                       pathname === item.href 
                         ? (scrolled ? 'text-[#FF6B00] bg-gray-100' : 'text-[#FF6B00] bg-white/5')
-                        : (scrolled ? 'text-gray-600 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
+                        : (scrolled ? 'text-gray-800 hover:text-[#FF6B00] hover:bg-gray-100/50' : 'text-gray-300 hover:text-white hover:bg-white/5')
                     }`}
                   >
                     {item.label}
@@ -212,19 +212,6 @@ export default function Header() {
 
           {/* Action CTAs */}
           <div className="hidden lg:flex items-center space-x-4 flex-shrink-0" id="desktop-ctas">
-            <a 
-              id="header-wa-btn"
-              href="https://wa.me/923006392025" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Contact us on WhatsApp at +92 300 6392025"
-              className={`flex items-center space-x-1.5 text-sm font-semibold transition-colors whitespace-nowrap flex-shrink-0 focus-visible:ring-2 focus-visible:ring-[#FF6B00] focus-visible:ring-offset-2 focus-visible:outline-none rounded-lg ${
-                scrolled ? 'text-gray-700 hover:text-[#FF6B00]' : 'text-gray-300 hover:text-[#FF6B00]'
-              }`}
-            >
-              <MessageSquare className="w-4 h-4 text-[#FF6B00] flex-shrink-0" />
-              <span className="whitespace-nowrap">+92 300 6392025</span>
-            </a>
             <Link 
               id="header-demo-btn"
               href="/contact?demo=true" 
