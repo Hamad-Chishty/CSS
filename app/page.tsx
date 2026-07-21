@@ -785,21 +785,21 @@ export default function HomePage() {
             {/* Left side text detail */}
             <div className="lg:col-span-7 space-y-6" id="founder-details">
               <span className="text-xs font-semibold text-[#FF6B00] uppercase tracking-wider bg-[#FF6B00]/10 px-3.5 py-1.5 rounded-full inline-block">
-                About the Founder
+                Our Commitment
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight">
                 Built With a Hands-On Approach
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Direct engagement, expert engineering, and long-term commitment from our founder.
+                Direct engagement, expert engineering, and long-term commitment from our development team.
               </p>
               
               <div className="text-gray-600 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Muhammad Talha Chishty, founder and lead developer at Chishty Smart Solutions, oversees every single project personally.
+                  Our dedicated development team at Chishty Smart Solutions oversees every single project personally.
                 </p>
                 <p>
-                  With a hands-on approach to software development, UI/UX design, SEO strategy, and direct client communication, Talha ensures your business gets a practical, functional system built to the highest standard.
+                  With a hands-on approach to software development, UI/UX design, SEO strategy, and direct client communication, we ensure your business gets a practical, functional system built to the highest standard.
                 </p>
               </div>
 
@@ -835,11 +835,11 @@ export default function HomePage() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#FF6B00]/5 rounded-full blur-2xl"></div>
                 <div className="space-y-6 relative z-10">
                   <div className="w-16 h-16 rounded-full bg-[#FF6B00]/10 flex items-center justify-center border border-[#FF6B00]/20 text-[#FF6B00] text-xl font-bold font-mono">
-                    MTC
+                    CSS
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Muhammad Talha Chishty</h3>
-                    <p className="text-xs font-semibold text-[#FF6B00] uppercase tracking-widest mt-1">Founder & Lead Engineer</p>
+                    <h3 className="text-xl font-bold text-gray-900">Chishty Smart Solutions</h3>
+                    <p className="text-xs font-semibold text-[#FF6B00] uppercase tracking-widest mt-1">Software & SEO Solutions</p>
                   </div>
                   <div className="border-t border-gray-200 pt-4 space-y-2 text-xs sm:text-sm text-gray-600 font-mono">
                     <div>• Location: Multan, Pakistan</div>
