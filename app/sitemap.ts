@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/industries', priority: 0.8, changeFrequency: 'weekly' as const },
     { route: '/portfolio', priority: 0.8, changeFrequency: 'weekly' as const },
     { route: '/pricing', priority: 0.8, changeFrequency: 'weekly' as const },
-    { route: '/privacy-policy', priority: 0.4, changeFrequency: 'yearly' as const },
+    { route: '/privacy', priority: 0.4, changeFrequency: 'yearly' as const },
     { route: '/terms', priority: 0.4, changeFrequency: 'yearly' as const },
   ]
 
