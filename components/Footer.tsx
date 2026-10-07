@@ -195,7 +195,7 @@ export default function Footer() {
             <span>© {currentYear} Chishty Smart Solutions. All rights reserved.</span>
           </div>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="hover:text-white transition-colors flex items-center space-x-1 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded px-1">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors flex items-center space-x-1 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded px-1">
               <Shield className="w-3.5 h-3.5" />
               <span>Privacy Policy</span>
             </Link>
